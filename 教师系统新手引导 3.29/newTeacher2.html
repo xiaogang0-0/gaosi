@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta content="telephone=no" name="format-detection"/>
+    <title>newteacher</title>
+    <script src="js/jquery-1.10.1.js"></script>
+</head>
+<style>
+    section,header{display:block;}
+    body,h1,h2,h3,h4,h5,h6,p{margin:0;}
+    ul,ol,li,dl,dd,div{margin:0;padding:0;}
+    ul,ol{list-style:none outside none; }
+   /* h1,h2,h3{line-height: 2; font-weight: normal; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.4rem; }*/
+    body{font-family:"Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;-webkit-backface-visibility:hidden;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+    body,html{height:100%;}
+
+
+    .fl {float:left;}
+    .fr {float: right;}
+    .hidden,.none {display: none;}
+    .newrap{background-size: 100% 100%;min-width: 1200px;}
+    .newrap  a:hover{background:rgba(0,0,0,.4);}
+    .con{position: relative;width: 100%;height: 100%;}
+
+    .newrap1{background: url('images/index1.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .newrap1 .con{position: relative;width: 51.5%;height: 100%;}
+    .Bnt1{position: absolute;right: 0;top: 44.5%;background: url("images/cons1.png") no-repeat;background-size: 100% 100%;height: 68px;width: 388px;}
+    .newrap .Bnt1 a{width: 107px;height: 62px; border-radius:  10px; margin: 3px;}
+
+
+    .newrap2{background: url('images/index2.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .newrap2 .con{position: relative;width: 51.5%;height: 100%;}
+    .Bnt2{position: absolute;left: 10%;top: 14.5%;background: url("images/cons2.png") no-repeat;background-size: 100% 100%;height: 68px;width: 467px;}
+    .newrap .Bnt2 a{width: 103px;height: 62px; border-radius: 10px; margin: 3px;}
+
+
+/*一种模式 空盒子boeder闪现*/
+    .newrap3{background: url('images/index3.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .Bnt3{position: absolute;left: 34.3%;top: 45.58%; width: 12.1%;height:3.6%;}
+    .newrap .Bnt3 a{width: 100%;height:100%; border: 3px solid #fd6860;}
+
+/*另一种模式上下定位的提示整图定位按钮*/
+    .newrap4{background: url('images/index6.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .Bnt4{position: absolute;left: 34.01%;top: 3.1%;background: url("images/cons4.png") no-repeat;background-size: 100% 100%;height: 526px;width: 598px;}
+    .newrap .Bnt4 a{width: 100px;height: 62px; border-radius: 10px; margin: 3px;position: absolute;bottom: 0;right: 120px;}
+
+    .newrap5{background: url('images/index5.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .Bnt5{position: absolute;right: 5.9%;top: 12%; width: 6.1%;height:3.6%;}
+    .newrap .Bnt5 a{width: 100%;height:100%; border: 3px solid #fd6860;border-radius: 5px;}
+
+    .newrap6{background: url('images/index6.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .Bnt6{position: absolute;left: 34.01%;top: 3.1%;background: url("images/cons6.png") no-repeat;background-size: 100% 100%;height: 526px;width: 598px;}
+    .newrap .Bnt6 a{width: 100px;height: 68px; border-radius: 10px; margin: 3px;position: absolute;bottom: 3px;right: 116px;}
+
+     .newrap7{background: url('images/index7.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .newrap7 .con{position: relative;width: 51.5%;height: 100%;}
+    .Bnt7{position: absolute;left: 10%;top: 22.7%;background: url("images/cons7.png") no-repeat;background-size: 100% 100%;height: 68px;width: 388px;}
+    .newrap .Bnt7 a{width: 84px;height: 62px; border-radius:  10px; margin: 3px;}
+
+
+    .newrap8{background: url('images/index8.jpg') no-repeat; background-size: 100% 100%;min-width: 1200px;}
+    .Bnt8{position: absolute;right: 6.3%;top: 33.7%; width: 4%;height:3.6%;}
+    .newrap .Bnt8 a{width: 100%;height:100%; border: 3px solid #fd6860; border-radius: 8px;}
+    
+
+
+
+</style>
+<body>
+
+    <div class="newrap newrap1">
+        <div class="con"> 
+            <div class="Bnt1">
+                <a href="javascript:;" class="fl"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="newrap newrap2">
+        <div class="con"> 
+            <div class="Bnt2">
+                <a href="javascript:;" class="fr"></a>
+            </div>
+        </div>
+    </div>
+
+     <div class="newrap newrap3">
+        <div class="con"> 
+            <div class="Bnt3">
+                <a href="javascript:;" class="fr"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="newrap newrap4">
+        <div class="con"> 
+            <div class="Bnt4">
+                <a href="javascript:;" class="fr"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="newrap newrap5">
+        <div class="con"> 
+            <div class="Bnt5">
+                <a href="javascript:;" class="fr"></a>
+            </div>
+        </div>
+    </div>
+
+     <div class="newrap newrap7">
+        <div class="con"> 
+            <div class="Bnt7">
+                <a href="javascript:;" class="fr"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="newrap newrap8">
+        <div class="con"> 
+            <div class="Bnt8">
+                <a href="javascript:;" class="fr"></a>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    $(function(){   //第三个的border 带闪现
+
+        var $btn = $("a");
+        $btn.click(function(event) {
+             // console.log($("this").parents(""))
+        });
+
+
+
+
+
+
+
+        // Set div height 
+        setDivWindowHeight('.newrap');
+
+        $(window).resize(function(){
+            setDivWindowHeight('.newrap');
+        });
+        
+        // Functions
+        function setDivWindowHeight(elem) {
+            if($(window).height()<=830){
+                $(elem).css('height',  '830px');
+            }else if($(window).height()>=1440){
+                $(elem).css('height',  '1440px');
+            }else{
+                $(elem).css('height', $(window).height() + 'px');
+            }
+        }
+
+        // function(attr){
+
+        // }
+
+
+    });
+</script>
+</body>
+</html>
