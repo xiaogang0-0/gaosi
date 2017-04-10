@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <link rel="shortcut icon" href="#" type="image/png">
 
-  <title>快捷通道-学员通道</title>
+  <title>快捷通道-班级通道</title>
 
   <!--btSelect-->
   <link href="js/btSelect/bootstrap-select.min.css" rel="stylesheet">
@@ -28,8 +28,6 @@
   <![endif]-->
 
 <style type="text/css">
-
-/*plgl_xueyuanguanli.html*/
     .kjtd .bjgl-list1 {width: 28%;}
     .kjtd .red {font-size: 12px; font-weight: 400; color: red;}
     .kjtd .green {font-size: 12px; font-weight: 400; color: green;}
@@ -49,25 +47,27 @@
     .kjtd .bianji li {height: 50px;}
     .kjtd .bianji li i {float:left;}
     .kjtd .bianji  input[type="text"] { width: 60%; min-width: 110px;float: left; margin-top: -3px;}
-    .kjtd .bianji select { min-width: 110px; max-width: 180px;float: left; border-radius: 5px; border-color: #ccc; height: 30px; padding-left: 5px;} 
+    /*.kjtd .bianji select { min-width: 110px; max-width: 180px;float: left; border-radius: 5px; border-color: #ccc; height: 30px; padding-left: 5px;} */
 
-
+ 
     .kjtd .table a{ display: inline-block; width: 30%; text-align: center;}
     .kjtd #js-bianji {display: none;}
     .kjtd .panel-body{ padding-top:0px; padding-bottom:0px;}
-    /*.kjtd #js-table select{width: 100%; display: ; margin: 0 auto;}*/
+    /*.kjtd #js-table select{width: 110%; display: ; margin: 0 auto; }*/
 
     .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 60%;}
-    .kjtd #js-bianji .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) li{ height: 100%;}
+    .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) li{ height: 100%;} 
 
-    .kjtd-x #js-table .bootstrap-select{width: auto;}
-    .kjtd-x .table #js-table .dropdown-menu a{width: 100%;}
+
+
+
+
 </style>
 </head>
 
 <body class="sticky-header">
 
-<section class="kjtd-x kjtd">
+<section class="kjtd kjtd-b">
     <!-- left side start-->
     <div class="left-side sticky-left-side">
 
@@ -165,10 +165,11 @@
                 <li class="menu-list nav-active">
                     <a href="javascript:;"><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
                     <ul class="sub-menu-list">
-                        <li class="active"><a href="kjtd_xueyuantongdao.html">学员通道</a></li>
-                        <li class=""><a href="kjtd_banjitongdao.html">班级通道</a></li>        
+                        <li class=""><a href="kjtd_xueyuantongdao.html">学员通道</a></li>
+                        <li class="active"><a href="kjtd_banjitongdao.html">班级通道</a></li>        
                     </ul>
                 </li>
+
 
                 <li><a href="building.html"><i class="fa fa-wrench"></i> <span>建设中...</span></a></li>
             </ul>
@@ -214,30 +215,24 @@
                     <a href="home.html">首页</a>
                 </li>
                 <li ><a>快捷通道</a></li>
-                <li class="active">学员通道</li>
+                <li class="active">班级通道</li>
             </ul>
         </div>
         <!-- page heading end-->
         <div class="wrapper">
             <section class="panel bjgl-list  bjgl-list1">
                   <header class="panel-heading clearfix">                      
-                    <div class="bossss ">
-                        <button class="btn btn-warning " type="button">
-                            <i class="fa fa-upload"></i> 导入学员 
-                        </button>         
-                        <a href="javascript:;">下载导入模板</a>
-                    </div>
-                    <button class="btn btn-success " type="button" data-toggle="modal" href=""><i class="fa fa-plus "></i> 添加学员 </button>
+                    <button class="btn btn-success" type="button" data-toggle="modal" href="" id="js-tianjiabanji"><i class="fa fa-plus "></i> 添加班级 </button>
                   </header>
                 
                   <div class="search-info"> 
                         <div class="search-box clearfix " >
                             <input type="text" class="sb-input sb1-input"  />
                             <input type="text" class="hide sb-input" id="J_searchtype" />
-                            <div class="sb-nav" id="J_searchnav" data-toggle="dropdown"><span class=" fa fa-search"></span><i>班主任</i><span class="caret"></span></div>
+                            <div class="sb-nav" id="J_searchnav" data-toggle="dropdown"><span class=" fa fa-search"></span><i>班主任姓名</i><span class="caret"></span></div>
                             <ul class="dropdown-menu" id="J_searchcon">
-                                <li >姓名</li>
-                                <li>班主任</li>
+                                <li>班主任姓名</li>
+                                <li >维护人</li>
                             </ul>
                             <button class="btn sb-btn btn-success btn-lg " type="button">搜索</button>
                         </div>
@@ -245,18 +240,17 @@
                  
                  <div class="panel-body">
                     <ul class="list-cons center">
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
+                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
                     </ul>
                  </div>
-
                 <ul class="pagination mr10 fr">
                     <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
                     <li class="active"><a href="javascript:;">1</a></li>
@@ -267,43 +261,40 @@
             <section id="js-baocun"class="panel bjgl-info mauto baocun" style="margin-bottom: 10px">
                     <header class="panel-heading center  panel-heading11">
                         <button id="js-btn" class="btn btn-success pull-left" type="button" data-toggle="modal" href=""><i class="fa fa-pencil-square-o"></i> 编辑 </button>   
-                         学员信息
+                         班级信息
                     </header>
                    <div class="panel-body ">
                        <ul class="clearfix lh30 ">
-                           <li class="col-lg-4"><i class="c-999">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;：</i>王小雷</li>
-                           <li class="col-lg-4"><i class="c-999">生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日&nbsp;：</i>2000-01-01</li>
-                           <li class="col-lg-4"><i class="c-999">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话&nbsp;：</i>13888888888</li>
-                           <li class="col-lg-4"><i class="c-999">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;：</i>男</li>
+                           <li class="col-lg-4"><i class="c-999">班级名称：</i>2016秋季一班</li>
+                           <li class="col-lg-4"><i class="c-999">科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目&nbsp;：</i>小学数学</li>
                            <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>一年级</li>
-                           <li class="col-lg-4"><i class="c-999">班&nbsp;主&nbsp;任&nbsp;：</i>王丽</li>
+                           <li class="col-lg-4"><i class="c-999">教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师&nbsp;：</i>王莉</li>
+                           <li class="col-lg-4"><i class="c-999">维&nbsp;&nbsp;护&nbsp;&nbsp;人：</i>王伟</li>
                            <li class="col-lg-4"><i class="c-999">校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区&nbsp;：</i>五道口</li>
+                           <li class="col-lg-4"><i class="c-999">班级状态：</i>正常</li>
                        </ul>
                    </div>
             </section>
 
-            <section class="panel bjgl-info  bianji" id="js-bianji">
+            <section class="panel bjgl-info  bianji " id="js-bianji">
                     <header class="panel-heading center  panel-heading11">
+                        
                         <button  id="js-btn1" class="btn btn-success pull-left " type="button" data-toggle="modal" href=""><i class="fa fa-pencil-square-o"></i> 保存</button>   
-                         学员信息
+                         班级信息
                     </header>
                    <div class="panel-body ">
+
                        <ul class="clearfix">
-                           <li class="col-lg-4"><i class="c-999">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;：</i>
+                           <li class="col-lg-4"><i class="c-999"><span class="red">*</span>班级名称：</i>
                                 <input type="text" placeholder="请输入" class="form-control"  />
                            </li>
-                           <li class="col-lg-4"><i class="c-999">生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日&nbsp;：</i>
-                                <input id="assessover-data1" class="laydate-icon" type="text" value="" placeholder="选择日期">
+                           <li class="col-lg-4"><i class="c-999"><span class="red">*</span>科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：</i>
+                                <select  class="selectpicker">
+                                    <option>小学数学</option>
+                                    <option>小学语文</option>
+                                </select>
                            </li>
-                           <li class="col-lg-4"><i class="c-999">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话&nbsp;：</i>
-                                    <input type="text" placeholder="请输入" class="form-control"  />
-                            </li>
-                           <li class="col-lg-4"><i class="c-999">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;：</i>
-                                                
-                                <label for="man"><input type="radio" value="男" name="man" id="man"/> <span>男</span></label>
-                                <label for="man2"><input type="radio" value="女" name="man" id="man2"/><span>女</span></label>
-                           </li>
-                           <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>
+                           <li class="col-lg-4"><i class="c-999"><span class="red">*</span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：</i>
                                 <select  class="selectpicker">
                                     <option>一年级</option>
                                     <option>二年级</option>
@@ -312,18 +303,18 @@
                                     <option>五年级</option>
                                 </select>
                             </li>
-                          <!--   <li class="col-lg-3"><span class="infotitle">岗位：</span>
-                                <select  class="selectpicker">
-                                    <option>学管师</option>
-                                    <option>班主任</option>
-                                </select>
-                            </li> -->
-                           <li class="col-lg-4"><i class="c-999">班&nbsp;主&nbsp;任&nbsp;：</i>
-                                <select  class="selectpicker">
+                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师&nbsp;：</i>
+                               <select  class="selectpicker">
                                     <option>王老师</option>
                                     <option>李老师</option>
                                     <option>张老师</option>
-                                    <option>郝老师</option>
+                                </select>
+                            </li>
+                            <li class="col-lg-4"><i class="c-999">维&nbsp;护&nbsp;人&nbsp;：</i>
+                                <select  class="selectpicker">
+                                    <option>王伟</option>
+                                    <option>李雷</option>
+                                    <option>黄春梅</option>
                                 </select>
                            </li>
                            <li class="col-lg-4"><i class="c-999">校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区&nbsp;：</i>
@@ -333,6 +324,12 @@
                                     <option>西城</option>
                                 </select>
                             </li>
+                           <li class="col-lg-4"><i class="c-999"><span class="red">*</span>班级状态：</i>
+                                <select  class="selectpicker">
+                                    <option>正常</option>
+                                    <option>停课</option>
+                                </select>
+                           </li>
                        </ul>
                    </div>
             </section>
@@ -342,135 +339,82 @@
             <section class="panel bjgl-info">
                 <div class="panel-body">    
                     <header class="panel-heading  auto">
-                        <button class="btn btn-success" type="button"  href="#jwjx-ydypaikeModal" data-toggle="modal" id="js-add">
-                            <i class="fa fa-plus"></i> 添加课程
-                        </button>   
-                        <span class="red">注意：只可添加一对一课程，班组课请到班级中添加</span> 
+
+                       
+                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-addKechengModal"><i class="fa fa-plus"></i> 添加学员 </button>
+                        
+
+                        <button class="btn btn-success " type="button" data-toggle="modal" href="#cwgl-addBeiyongjinModal"><i class="fa fa-plus"></i> 排课 </button>
+                                                                            
+                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-editKechengModal"><i class="fa fa-pencil-square-o"></i> 调课 </button>
+ 
+            
+                        
+                     
+                         
                     </header>
 
                     <div class="adv-table mtop10 ">
-                        <p class="red">共<span>6</span>个课程，<span>3</span>个正常课程</p> 
-                        <!-- <table  class="display table table-bordered table-striped mauto">
+                        <p class="red">共<span>26</span>人，<span>23</span>人在读</p> 
+                        <table  class="display table table-bordered table-striped mauto">
                             <thead>
                                 <tr>
                                     <th width="8%" >序号</th>
-                                    <th width="15%">科目</th>
-                                    <th width="15%" >班级名称</th>
-                                    <th width="13%">教师</th>
-                                    <th width="10%">辅导方式</th>
+                                    <th width="20%">学员</th>
                                     <th width="10%" >状态</th>
                                     <th width="50%" >操作</th>
                                 </tr>
                             </thead>
-                        </table> -->
+                        </table>
                     </div>
               <!--       <div class="adv-table "> -->
                         <table  class=" table table-bordered table-striped caozuo">
-                            <thead>
-                                <tr>
-                                    <th width="8%" >序号</th>
-                                    <th width="15%">科目</th>
-                                    <th width="15%" >班级名称</th>
-                                    <th width="13%">教师</th>
-                                    <th width="10%">辅导方式</th>
-                                    <th width="10%" >状态</th>
-                                    <th width="50%" >操作</th>
-                                </tr>
-                            </thead>
                             <tbody class="center" id="js-table">
                                 <tr>
                                     <td width="8%"> 1</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">一对一</td>
+                                    <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="red">停课</span></td>
                                     <td  width="50%">
                                         <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a>
                                         <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td width="8%"> 2</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">/</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">班组课</td>
+                                    <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a>
-                                        <a class="c-999" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
+                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td width="8%"> 3</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
+                                    <td width="20%">王晓磊（012502448）</td> 
+                                    <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
                                         <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a>
                                         <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td width="8%"> 4</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">/</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">班组课</td>
+                                    <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a>
+                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
                                         <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td width="8%"> 5</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
-                                    <td  width="40%">
+                                    <td width="20%">王晓磊（012502448）</td> 
+                                    <td  width="10%"><span class="green">正常</span></td>
+                                    <td  width="50%">
                                         <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a>
                                         <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td width="8%"> 6</td>
-                                    <td width="15%">
-                                        <select class="selectpicker">
-                                            <option>小学语文</option>
-                                            <option>小学数学</option>
-                                            <option>小学英语</option>
-                                            <option>小学物理</option>
-                                        </select>
-                                    </td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="13%">
-                                        <span>李老师</span>
-                                        <select class="selectpicker">
-                                            <option>李老师</option>
-                                            <option>张老师</option>
-                                        </select>
-                                    </td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
-                                    <td  width="40%">
-                                        <a class="green-a inline-block" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
-                                    </td>
-                                </tr>
-                                
-                            
                                
                             </tbody>        
                         </table>
@@ -484,16 +428,263 @@
                     <li><a href="javascript:;" class="fa fa-caret-right"></a></li>
                  </ul>
             </section> 
-
-
-            
-         
         </div>
     </div>
     <!-- main content end-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 </section>
+
+
+<style type="text/css">
+    .kjtd1 #js-tishi { padding-left: 40px;}
+    .kjtd1 #js-tishi span {padding-right: 20%;}
+    .kjtd1  #dynamic-table a {display: inline-block;width: 45%;}
+    .kjtd1 #modal-bodyone .form-control {width: 50%;}
+    .kjtd1 #modal-bodyone .modal-info>ul>li>span {width:70px;}
+    .kjtd1 #modal-bodyone .editinfo>ul>li {width: 25%; float: left;}
+    .kjtd1 .modal-info>ul>li {clear: none;}
+
+
+
+
+
+
+
+  
+
+
+
+/*这个在修改*/
+    .kjtd1  #tjxy-table .square-green {line-height: 30px;vertical-align: top;}
+    .kjtd1  #tjxy-table .square-green input {
+            width: 22px;
+            height: 22px;
+    }
+   
+
+</style>
+<!--添加学员弹窗未完成-->
+<div class="modal  kjtd1" id="xtsz-addKechengModal" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"><span>2016秋季一班</span>添加学员</h4>
+            </div>
+            <div class="modal-body" id="modal-bodyone">                   
+                    <div class="clearfix modal-info editinfo">
+                        <ul class="search-allinfocon clearfix">
+                            <li class="fl"><span class="">姓名：</span>
+                                <input type="text" class="form-control " />
+                            </li>
+                            <li class="fl"><span class="">年级： </span>
+                                <select  class="selectpicker">
+                                    <option>请选择</option>
+                                    <option>一年级</option>
+                                    <option>二年级</option>
+                                    <option>三年级</option>
+                                    <option>四年级</option>
+                                </select>
+                            </li>
+                            <li class=""><span class="">班主任：</span>
+                                <select  class="selectpicker">
+                                    <option>请选择</option>
+                                    <option>李老师</option>
+                                    <option>王老师</option>
+                                </select>
+                            </li>
+                            
+                            <li class=""><span class="">校区：</span>
+                                <select  class="selectpicker">
+                                    <option>请选择</option>
+                                    <option>海淀校区</option>
+                                    <option>五道口校区</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="adv-table">
+                            <table id="tjxy-table" class="display table table-bordered table-striped">
+                                <tbody class="center"> 
+                                    <tr>
+
+                                        <td>
+                                            <div class="square-green" >
+                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                            </div>
+                                        </td>
+
+
+
+
+                                        <td>
+                                            <div class="square-green single-row inline-block" >
+                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="square-green single-row inline-block" >
+                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="square-green single-row inline-block" >
+                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="square-green single-row inline-block" >
+                                                <input type="checkbox" class=""><span>张小伟(02211368)</span>
+                                            </div>
+                                        </td>
+                                           
+                                    </tr>
+                                </tbody>        
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="modal-btnbox">
+                        <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
+                        <span class="red ml10">提示：已选择<span class="">12</span>人</span>
+                    </div>   
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--排课弹窗-->
+<div class="modal fade paike-tanchuang " id="cwgl-addBeiyongjinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">排课</h4>
+            </div>
+            <div class="modal-body">
+                    <p id="js-tishi"><i class="c-999">班级名称：</i><span> 2017春季集训1班</span><i class="c-999 ">教师：</i><span> 冷清秋</span></p>
+                    <div class="clearfix modal-info editinfo">
+                        <ul>
+                            
+                          
+                            <li><span><i class="c-red">*</i> 上课时间：</span>
+                                <input id="assessover-data3" class="laydate-icon bfb50" type="text">
+                            </li>
+                            <li><span> <i class="c-red">*</i> 上课频率：</span>
+                                <input type="text" class="form-control bfb50 fl" />
+                            </li> 
+                            <li><span><i class="c-red">*</i> 排课次数：</span>
+                                <select  class="selectpicker ">
+                                    <option>请选择</option>
+                                    <option>。。。</option>
+                                    <option>。。。。</option>
+                                    <option>。。。。。</option>
+                                </select>
+                            </li>                                                                                             
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="modal-btnbox">
+                        <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
+                    </div>                                        
+            </div>
+        </div>
+    </div>
+</div>
+<!--调课弹窗-->
+<div class="modal fade kjtd1" id="xtsz-editKechengModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"><span>2016秋季冲刺一班</span>调课</h4>
+            </div>
+            <div class="modal-body">                   
+                    <div class="clearfix modal-info editinfo">
+                       <div class="adv-table" >
+                        <table id="dynamic-table" class="display table table-bordered table-striped ">
+                            <thead class="center">
+                                <tr > 
+                                    <th width="10%">序号</th>
+                                    <th width="40%">上课时间</th>
+                                    <th width="15%">教师</th>
+                                    <th width="40%">操作</th>   
+                                </tr>
+                            </thead>
+                            <tbody class="center">
+                                 
+                                <tr> 
+                                    <td width="10%">1</td>
+                                    <td width="40%">
+                                        <input id="assessover-data1" class="laydate-icon" type="text" value="" placeholder="选择时间" style="width:100%">
+                                    </td>
+                                    <td width="15%">杨克林</td>
+                                    <td  width="40%" class="js-reombtn">
+                                        <a class="green-a" data-toggle="modal" href="###" >保存 </a>
+                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                    </td>  
+                                </tr>
+                                <tr> 
+                                    <td width="15%">2</td>
+                                    <td width="35%">
+                                        2016-01-01 16:30-20:30
+                                    </td>
+                                    <td width="10%">杨克林</td>
+                                    <td  width="40%" class="js-reombtn">
+                                        <a class="green-a" data-toggle="modal" href="###" >修改时间</a>
+                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                    </td>  
+                                </tr>
+
+
+
+                            </tbody>        
+                        </table>
+                        <hr>
+                        <div class="modal-btnbox">
+                            <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
+                            
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                     
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -502,22 +693,23 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
 $(function(){
-        var $btn = $("#js-btn");
-        var $btn1 = $("#js-btn1");
-        var $bianji = $("#js-bianji");
-        var $baocun = $("#js-baocun");
-        var $add = $("#js-add");
-        var $table = $("#js-table");
-        var length = $("#js-table tr").length;
-        // var str = '<tr><td width="8%"> '+length+'</td><td width="15%"><select class="selectpicker"><option>小学语文</option><option>小学数学</option><option>小学英语</option><option>小学物理</option></select></td><td width="15%">2016秋季培训</td><td width="13%"><span>李老师</span><select class="selectpicker"><option>李老师</option><option>张老师</option></select></td><td  width="10%">一对一</td><td  width="10%"><span class="red">停课</span></td><td  width="40%"><a class="green-a inline-block" data-toggle="modal" href="###" >复课</a><a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a><a class="green-a" data-toggle="modal" href="###" >删除</a></td></tr>';
+        var $btn = $(".kjtd #js-btn");
+        var $btn1 = $(".kjtd #js-btn1");
+        var $bianji = $(".kjtd #js-bianji");
+        var $baocun = $(".kjtd #js-baocun");
+       
+        var $table = $(".kjtd #js-table");
+        var $banji = $(".kjtd #js-tianjiabanji");
         
-
-
-
-                          
-
+        
        
        
+       
+
+       $banji.click(function(){ 
+           $baocun.hide();
+           $bianji.show()
+        })
         $btn.click(function(){ 
            $baocun.hide();
            $bianji.show()
@@ -527,16 +719,12 @@ $(function(){
            $bianji.hide()
         })
 
-        $add.click(function(){
-            length+=1;
-            $table.append('<tr><td width="8%">'+length+'</td><td width="15%"><select class=""><option>小学语文</option><option>小学数学</option><option>小学英语</option><option>小学物理</option></select></td><td width="15%">2016秋季培训</td><td width="13%"><span>李老师</span><select class="selectpicker"><option>李老师</option><option>张老师</option></select> </td> <td  width="10%">一对一</td><td  width="10%"><span class="red">停课</span></td><td  width="40%">                                        <a class="green-a inline-block" data-toggle="modal" href="###" >复课</a><a class="green-a" data-toggle="modal" href="###" >更换教师/保存</a><a class="green-a" data-toggle="modal" href="###" >删除</a></td></tr>');
-        })
-
         $table.click(function(ev){
             // alert(ev.target.innerHTML)
-            if(ev.target.innerHTML == "更换教师/保存"){
+            if(ev.target.innerHTML == "复课"){
                 alert(ev.target.innerHTML)
-                // alert($("this").parent('tr').)
+            }else if( ev.target.innerHTML =="删除"){
+                alert(ev.target.innerHTML)
             }
         })
 
