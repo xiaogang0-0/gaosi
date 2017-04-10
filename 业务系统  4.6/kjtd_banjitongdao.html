@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <link rel="shortcut icon" href="#" type="image/png">
 
+  
   <title>快捷通道-班级通道</title>
-
+  <!-- timer chajian-->
+  <link rel="shortcut icon" href="#" type="image/png">
   <!--btSelect-->
   <link href="js/btSelect/bootstrap-select.min.css" rel="stylesheet">
-
   <!--icheck-->
   <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
-
   <!--common-->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="js/datetimepicker/jquery.datetimepicker.min.css">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
@@ -52,7 +52,7 @@
  
     .kjtd .table a{ display: inline-block; width: 30%; text-align: center;}
     .kjtd #js-bianji {display: none;}
-    .kjtd .panel-body{ padding-top:0px; padding-bottom:0px;}
+    .kjtd .panel-body{ padding-top:10px; padding-bottom:0px;}
     /*.kjtd #js-table select{width: 110%; display: ; margin: 0 auto; }*/
 
     .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 60%;}
@@ -598,7 +598,7 @@
                             
                           
                             <li><span><i class="c-red">*</i> 上课时间：</span>
-                                <input id="assessover-data3" class="laydate-icon bfb50" type="text">
+                                <input id="assessover-data6" class="laydate-icon bfb50" type="text">
                             </li>
                             <li><span> <i class="c-red">*</i> 上课频率：</span>
                                 <input type="text" class="form-control bfb50 fl" />
@@ -686,11 +686,30 @@
     </div>
 </div>
 
-
-
-
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="js/jquery-1.10.2.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+    <!--↓ 自定义滚动条插件-->
+<script src="js/jquery.nicescroll.js"></script>
+
+<!--icheck -->
+<script src="js/iCheck/jquery.icheck.js"></script>
+<!-- <script src="js/icheck-init.js"></script> -->
+
+
+<!--btSelect -->
+<script src="js/btSelect/bootstrap-select.min.js"></script>
+
+<!--date -->
+<script type="text/javascript" src="js/date/date.js"></script>
+
+<!-- timer chajian -->
+<script src="js/datetimepicker/jquery.datetimepicker.full.js"></script>
+<!--common scripts for all pages  所有页面的 js-->
+<script src="js/scripts.js"></script>
+
+
 <script type="text/javascript">
 $(function(){
         var $btn = $(".kjtd #js-btn");
@@ -741,31 +760,6 @@ $(function(){
 })
 
 </script>
-
-
-
-<script src="js/bootstrap.min.js"></script>
-    <!--↓ 自定义滚动条插件-->
-<script src="js/jquery.nicescroll.js"></script>
-
-<!--icheck -->
-<script src="js/iCheck/jquery.icheck.js"></script>
-<!-- <script src="js/icheck-init.js"></script> -->
-
-
-<!--btSelect -->
-<script src="js/btSelect/bootstrap-select.min.js"></script>
-
-<!--date -->
-<script type="text/javascript" src="js/date/date.js"></script>
-
-
-
-<!--common scripts for all pages  所有页面的 js-->
-<script src="js/scripts.js"></script>
-
-
-
 
 </body>
 </html>

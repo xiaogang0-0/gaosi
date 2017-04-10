@@ -271,12 +271,30 @@
 			istoday: false,
 		});//绑定元素
 
-    laydate({
-      elem: '#assessover-data14',
-      format: 'YYYY-MM-DD hh:mm', //日期格式
-      istime: true,
-      istoday: false,
-    });//绑定元素
+        laydate({
+          elem: '#assessover-data14',
+          format: 'YYYY-MM-DD hh:mm', //日期格式
+          istime: true,
+          istoday: false,
+        });//绑定元素
+// 这是新的时间方法到时候绑定id就可以
+
+        $('#assessover-data1').datetimepicker({
+            datepicker:true,
+            minHours:6,
+            maxHours:23,
+            format:'Y-m-d H:i',
+            step:10
+          });
+        $('#assessover-data6').datetimepicker({
+            datepicker:true,
+            minHours:6,
+            maxHours:23,
+            format:'Y-m-d H:i',
+            step:10
+          });
+
+
 	}();
 
 	function selecttabs(classname,n) {
