@@ -60,8 +60,8 @@
 
     /* 单页面私有*/
     .kjtd1 #js-tishi { padding-left: 40px;}
-    .kjtd1 #js-tishi span {padding-right: 20%;}
-    .kjtd1  #dynamic-table a {display: inline-block;width: 45%;}
+     #js-tishi span {padding-right: 20%;}
+    .kjtd1  #js-table a {display: inline-block;width: 45%;}
     .kjtd1 #modal-bodyone .form-control {width: 50%;}
     .kjtd1 #modal-bodyone .modal-info>ul>li>span {width:70px;}
     .kjtd1 #modal-bodyone .editinfo>ul>li {width: 25%; float: left;}
@@ -71,7 +71,9 @@
     .kjtd1  #tjxy-table .square-green .icheckbox_square-green{float: left;}/*新加*/
 
 
-
+    .adv-table .table tr:hover td {
+        border-color:#ddd; 
+    }
 
 </style>
 </head>
@@ -334,10 +336,9 @@
                         <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-addKechengModal"><i class="fa fa-plus"></i> 添加学员 </button>
                         <button class="btn btn-success " type="button" data-toggle="modal" href="#cwgl-addBeiyongjinModal"><i class="fa fa-plus"></i> 排课 </button>                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-editKechengModal"><i class="fa fa-pencil-square-o"></i> 调课 </button>
                     </header>
-                    <div class="adv-table mtop10 ">
-                        <p class="red">共<span>26</span>人，<span>23</span>人在读</p> 
-                        <table  class="display table table-bordered table-striped mauto">
-                            <thead>
+                        <table  class=" table table-bordered table-striped caozuo">
+                            <p class="red lh30">共<span>26</span>人，<span>23</span>人在读</p> 
+                             <thead>
                                 <tr>
                                     <th width="8%" >序号</th>
                                     <th width="20%">学员</th>
@@ -345,9 +346,6 @@
                                     <th width="50%" >操作</th>
                                 </tr>
                             </thead>
-                        </table>
-                    </div>
-                        <table  class=" table table-bordered table-striped caozuo">
                             <tbody class="center" id="js-table">
                                 <tr>
                                     <td width="8%"> 1</td>
@@ -552,7 +550,7 @@
             <div class="modal-body">                   
                     <div class="clearfix modal-info editinfo">
                        <div class="adv-table" >
-                        <table id="dynamic-table" class="display table table-bordered table-striped ">
+                        <table id="js-table" class="display table table-bordered table-striped ">
                             <thead class="center">
                                 <tr > 
                                     <th width="10%">序号</th>
@@ -569,8 +567,8 @@
                                     </td>
                                     <td width="15%">杨克林</td>
                                     <td  width="40%" class="js-reombtn">
-                                        <a class="green-a" data-toggle="modal" href="###" >保存 </a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green-a"  href="javascript::" >保存</a>
+                                        <a class="green-a"  href="javascript:;" >删除</a>
                                     </td>  
                                 </tr>
                                 <tr> 
@@ -580,8 +578,8 @@
                                     </td>
                                     <td width="10%">杨克林</td>
                                     <td  width="40%" class="js-reombtn">
-                                        <a class="green-a" data-toggle="modal" href="###" >修改时间</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green-a" data-toggle="modal" href="javascript:;" >修改时间</a>
+                                        <a class="green-a" data-toggle="modal" href="javascript:;" >删除</a>
                                     </td>  
                                 </tr>
                             </tbody>        
@@ -620,14 +618,21 @@
 
 <script type="text/javascript">
 $(function(){
-    
+
+
+    banjitongdao();
+
+
+
+    function banjitongdao(){
         var $btn = $(".kjtd #js-btn");
         var $btn1 = $(".kjtd #js-btn1");
         var $bianji = $(".kjtd #js-bianji");
         var $baocun = $(".kjtd #js-baocun");
         var $table = $(".kjtd #js-table");
         var $banji = $(".kjtd #js-tianjiabanji");
-        
+        var $tiaoke = $(".kjtd1 #js-table");
+      
         
        $banji.click(function(){ 
            $baocun.hide();
@@ -653,10 +658,63 @@ $(function(){
         $('#xtsz-addKechengModal input').iCheck({// 复选框样式
             checkboxClass: 'icheckbox_square-green',
         })
+
+        $tiaoke.click(function(ev){
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+
+            if(target.nodeName.toLocaleLowerCase() == 'a'){
+                    var $elem = $(ev.target).parents('tr').children();
+                    var val ="";
+                switch(target.innerHTML){
+                    case '保存' :
+
+                        val =$elem.eq(1).find('input').val();
+                        $elem.eq(1).html(val)
+                        $(target).html('修改时间');
+
+                        break;
+                    case '删除' :
+
+                        $(ev.target).parents('tr').remove();
+                        //ajax请求
+                        break;
+                    case '修改时间' :
+                        $(target).html('保存');
+                        val = $elem.eq(1).html(val);
+                        // $elem.eq(1).find('input').val();
+                        $elem.eq(1).html('<input id="assessover-data15" class="laydate-icon" type="text" value="" placeholder="选择时间" style="width:100%">')
+                        //这个加载出来  还得调方法
+                       
+                        $elem.eq(1).find('input').datepicker();
+                        
+                        break;
+        
+                }
+            }                         
+        })
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+        
 })
-
-
-
 </script>
 
 </body>
