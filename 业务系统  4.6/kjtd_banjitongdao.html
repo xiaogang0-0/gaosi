@@ -28,6 +28,7 @@
   <![endif]-->
 
 <style type="text/css">
+   /*双页面共有*/
     .kjtd .bjgl-list1 {width: 28%;}
     .kjtd .red {font-size: 12px; font-weight: 400; color: red;}
     .kjtd .green {font-size: 12px; font-weight: 400; color: green;}
@@ -47,17 +48,27 @@
     .kjtd .bianji li {height: 50px;}
     .kjtd .bianji li i {float:left;}
     .kjtd .bianji  input[type="text"] { width: 60%; min-width: 110px;float: left; margin-top: -3px;}
-    /*.kjtd .bianji select { min-width: 110px; max-width: 180px;float: left; border-radius: 5px; border-color: #ccc; height: 30px; padding-left: 5px;} */
-
  
     .kjtd .table a{ display: inline-block; width: 30%; text-align: center;}
     .kjtd #js-bianji {display: none;}
     .kjtd .panel-body{ padding-top:10px; padding-bottom:0px;}
-    /*.kjtd #js-table select{width: 110%; display: ; margin: 0 auto; }*/
 
     .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 60%;}
     .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) li{ height: 100%;} 
+    
 
+
+    /* 单页面私有*/
+    .kjtd1 #js-tishi { padding-left: 40px;}
+    .kjtd1 #js-tishi span {padding-right: 20%;}
+    .kjtd1  #dynamic-table a {display: inline-block;width: 45%;}
+    .kjtd1 #modal-bodyone .form-control {width: 50%;}
+    .kjtd1 #modal-bodyone .modal-info>ul>li>span {width:70px;}
+    .kjtd1 #modal-bodyone .editinfo>ul>li {width: 25%; float: left;}
+    .kjtd1 .modal-info>ul>li {clear: none;}
+
+    .kjtd1  #tjxy-table .square-green {vertical-align: top;}
+    .kjtd1  #tjxy-table .square-green .icheckbox_square-green{float: left;}/*新加*/
 
 
 
@@ -80,7 +91,6 @@
             <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
         </div>
         <!--logo and iconic logo end-->
-
         <div class="left-side-inner">
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
@@ -156,12 +166,9 @@
                         <li><a href="xxzx_yewutixing.html">业务提醒</a></li>
                         <li><a href="xxzx_xitongxiaoxi.html">系统消息</a></li>   
                         <li><a href="xxzx_beiwanglu.html">工作备忘</a></li>
-                                     
                     </ul>
                 </li>
                 <li><a href="sjtj_shujutongji-echarts.html"><i class="fa fa-bar-chart-o"></i> <span>数据统计</span></a></li>
-
-
                 <li class="menu-list nav-active">
                     <a href="javascript:;"><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
                     <ul class="sub-menu-list">
@@ -169,26 +176,19 @@
                         <li class="active"><a href="kjtd_banjitongdao.html">班级通道</a></li>        
                     </ul>
                 </li>
-
-
                 <li><a href="building.html"><i class="fa fa-wrench"></i> <span>建设中...</span></a></li>
             </ul>
             <!--sidebar nav end-->
-
         </div>
     </div>
     <!-- left side end-->
-    
     <!-- main content start-->
     <div class="main-content" >
-
         <!-- header section start-->
         <div class="header-section">
-
             <!--toggle button start-->
             <a class="toggle-btn"><i class="fa fa-bars"></i></a>
             <!--toggle button end-->
-
             <!--notification menu start -->
             <div class="menu-right">
                 <ul class="notification-menu">
@@ -200,7 +200,6 @@
                             <li><a href="#"><i class="fa fa-sign-out"></i>安全退出</a></li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
             <!--notification menu end -->
@@ -209,7 +208,6 @@
 
         <!-- page heading start-->
         <div class="page-heading">
-
             <ul class="breadcrumb">
                 <li>
                     <a href="home.html">首页</a>
@@ -224,7 +222,6 @@
                   <header class="panel-heading clearfix">                      
                     <button class="btn btn-success" type="button" data-toggle="modal" href="" id="js-tianjiabanji"><i class="fa fa-plus "></i> 添加班级 </button>
                   </header>
-                
                   <div class="search-info"> 
                         <div class="search-box clearfix " >
                             <input type="text" class="sb-input sb1-input"  />
@@ -237,7 +234,6 @@
                             <button class="btn sb-btn btn-success btn-lg " type="button">搜索</button>
                         </div>
                   </div>  
-                 
                  <div class="panel-body">
                     <ul class="list-cons center">
                         <li>2016秋季冲刺一班<span>（056215465）</span></li>
@@ -275,7 +271,6 @@
                        </ul>
                    </div>
             </section>
-
             <section class="panel bjgl-info  bianji " id="js-bianji">
                     <header class="panel-heading center  panel-heading11">
                         
@@ -333,27 +328,12 @@
                        </ul>
                    </div>
             </section>
-    
-
-
             <section class="panel bjgl-info">
                 <div class="panel-body">    
                     <header class="panel-heading  auto">
-
-                       
                         <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-addKechengModal"><i class="fa fa-plus"></i> 添加学员 </button>
-                        
-
-                        <button class="btn btn-success " type="button" data-toggle="modal" href="#cwgl-addBeiyongjinModal"><i class="fa fa-plus"></i> 排课 </button>
-                                                                            
-                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-editKechengModal"><i class="fa fa-pencil-square-o"></i> 调课 </button>
- 
-            
-                        
-                     
-                         
+                        <button class="btn btn-success " type="button" data-toggle="modal" href="#cwgl-addBeiyongjinModal"><i class="fa fa-plus"></i> 排课 </button>                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-editKechengModal"><i class="fa fa-pencil-square-o"></i> 调课 </button>
                     </header>
-
                     <div class="adv-table mtop10 ">
                         <p class="red">共<span>26</span>人，<span>23</span>人在读</p> 
                         <table  class="display table table-bordered table-striped mauto">
@@ -367,7 +347,6 @@
                             </thead>
                         </table>
                     </div>
-              <!--       <div class="adv-table "> -->
                         <table  class=" table table-bordered table-striped caozuo">
                             <tbody class="center" id="js-table">
                                 <tr>
@@ -415,11 +394,8 @@
                                         <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
-                               
                             </tbody>        
                         </table>
-                   <!--  </div> -->
-
                 </div>
                  <ul class="pagination mr10 fr">
                     <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
@@ -430,40 +406,10 @@
             </section> 
         </div>
     </div>
-    <!-- main content end-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+    <!-- main content end--> 
 </section>
 
 
-<style type="text/css">
-    .kjtd1 #js-tishi { padding-left: 40px;}
-    .kjtd1 #js-tishi span {padding-right: 20%;}
-    .kjtd1  #dynamic-table a {display: inline-block;width: 45%;}
-    .kjtd1 #modal-bodyone .form-control {width: 50%;}
-    .kjtd1 #modal-bodyone .modal-info>ul>li>span {width:70px;}
-    .kjtd1 #modal-bodyone .editinfo>ul>li {width: 25%; float: left;}
-    .kjtd1 .modal-info>ul>li {clear: none;}
 
 
 
@@ -471,19 +417,9 @@
 
 
 
-  
 
 
 
-/*这个在修改*/
-    .kjtd1  #tjxy-table .square-green {line-height: 30px;vertical-align: top;}
-    .kjtd1  #tjxy-table .square-green input {
-            width: 22px;
-            height: 22px;
-    }
-   
-
-</style>
 <!--添加学员弹窗未完成-->
 <div class="modal  kjtd1" id="xtsz-addKechengModal" >
     <div class="modal-dialog">
@@ -514,7 +450,6 @@
                                     <option>王老师</option>
                                 </select>
                             </li>
-                            
                             <li class=""><span class="">校区：</span>
                                 <select  class="selectpicker">
                                     <option>请选择</option>
@@ -529,16 +464,11 @@
                             <table id="tjxy-table" class="display table table-bordered table-striped">
                                 <tbody class="center"> 
                                     <tr>
-
                                         <td>
-                                            <div class="square-green" >
+                                            <div class="square-green single-row inline-block" >
                                                 <input type="checkbox"><span>张小伟(02211368)</span>
                                             </div>
                                         </td>
-
-
-
-
                                         <td>
                                             <div class="square-green single-row inline-block" >
                                                 <input type="checkbox"><span>张小伟(02211368)</span>
@@ -559,7 +489,6 @@
                                                 <input type="checkbox" class=""><span>张小伟(02211368)</span>
                                             </div>
                                         </td>
-                                           
                                     </tr>
                                 </tbody>        
                             </table>
@@ -571,17 +500,9 @@
                         <span class="red ml10">提示：已选择<span class="">12</span>人</span>
                     </div>   
             </div>
-            
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
 
 <!--排课弹窗-->
 <div class="modal fade paike-tanchuang " id="cwgl-addBeiyongjinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -595,10 +516,8 @@
                     <p id="js-tishi"><i class="c-999">班级名称：</i><span> 2017春季集训1班</span><i class="c-999 ">教师：</i><span> 冷清秋</span></p>
                     <div class="clearfix modal-info editinfo">
                         <ul>
-                            
-                          
                             <li><span><i class="c-red">*</i> 上课时间：</span>
-                                <input id="assessover-data6" class="laydate-icon bfb50" type="text">
+                                <input id="assessover-data16" class="laydate-icon bfb50" type="text">
                             </li>
                             <li><span> <i class="c-red">*</i> 上课频率：</span>
                                 <input type="text" class="form-control bfb50 fl" />
@@ -621,6 +540,7 @@
         </div>
     </div>
 </div>
+
 <!--调课弹窗-->
 <div class="modal fade kjtd1" id="xtsz-editKechengModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -642,11 +562,10 @@
                                 </tr>
                             </thead>
                             <tbody class="center">
-                                 
                                 <tr> 
                                     <td width="10%">1</td>
                                     <td width="40%">
-                                        <input id="assessover-data1" class="laydate-icon" type="text" value="" placeholder="选择时间" style="width:100%">
+                                        <input id="assessover-data15" class="laydate-icon" type="text" value="" placeholder="选择时间" style="width:100%">
                                     </td>
                                     <td width="15%">杨克林</td>
                                     <td  width="40%" class="js-reombtn">
@@ -665,26 +584,19 @@
                                         <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>  
                                 </tr>
-
-
-
                             </tbody>        
                         </table>
                         <hr>
                         <div class="modal-btnbox">
                             <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
-                            
                         </div>
                     </div>
-
-
-
-                    </div>
-                     
+                </div>  
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="js/jquery-1.10.2.min.js"></script>
@@ -695,9 +607,6 @@
 
 <!--icheck -->
 <script src="js/iCheck/jquery.icheck.js"></script>
-<!-- <script src="js/icheck-init.js"></script> -->
-
-
 <!--btSelect -->
 <script src="js/btSelect/bootstrap-select.min.js"></script>
 
@@ -709,22 +618,17 @@
 <!--common scripts for all pages  所有页面的 js-->
 <script src="js/scripts.js"></script>
 
-
 <script type="text/javascript">
 $(function(){
+    
         var $btn = $(".kjtd #js-btn");
         var $btn1 = $(".kjtd #js-btn1");
         var $bianji = $(".kjtd #js-bianji");
         var $baocun = $(".kjtd #js-baocun");
-       
         var $table = $(".kjtd #js-table");
         var $banji = $(".kjtd #js-tianjiabanji");
         
         
-       
-       
-       
-
        $banji.click(function(){ 
            $baocun.hide();
            $bianji.show()
@@ -739,31 +643,21 @@ $(function(){
         })
 
         $table.click(function(ev){
-            // alert(ev.target.innerHTML)
             if(ev.target.innerHTML == "复课"){
-                alert(ev.target.innerHTML)
+                // alert(ev.target.innerHTML)
             }else if( ev.target.innerHTML =="删除"){
-                alert(ev.target.innerHTML)
+                // alert(ev.target.innerHTML)
             }
         })
-
-
-
-//http://www.fontawesome.com.cn/icons-ui/#
-
-
-
-
-
-
-
+        
+        $('#xtsz-addKechengModal input').iCheck({// 复选框样式
+            checkboxClass: 'icheckbox_square-green',
+        })
 })
+
+
 
 </script>
 
 </body>
 </html>
-
-
-
-<!--            表格出两套                      -->

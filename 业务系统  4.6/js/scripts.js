@@ -277,16 +277,17 @@
           istime: true,
           istoday: false,
         });//绑定元素
-// 这是新的时间方法到时候绑定id就可以
 
-        $('#assessover-data1').datetimepicker({
+        // 这是新的时间方法到时候绑定id就可以 newdata
+
+        $('#assessover-data15').datetimepicker({
             datepicker:true,
             minHours:6,
             maxHours:23,
             format:'Y-m-d H:i',
             step:10
           });
-        $('#assessover-data6').datetimepicker({
+        $('#assessover-data16').datetimepicker({
             datepicker:true,
             minHours:6,
             maxHours:23,
