@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,42 +27,7 @@
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.min.js"></script>
   <![endif]-->
-
-<style type="text/css">
-        /*双页面共有*/
-    .kjtd .bjgl-list1 {width: 28%;}
-    .kjtd .red {font-size: 14px; font-weight: 400; color: red;}
-    .kjtd .green {font-size: 12px; font-weight: 400; color: green;}
-
-    .kjtd .panel-heading a {display: none;color: #ff9900;font-weight: 400;margin: 0 15px; font-size: 12px;}
-    .kjtd .bossss {display: inline-block; }
-    .kjtd .bossss:hover a{ display: inline-block;}
-    .kjtd .search-box .sb1-input {width: 66%;min-width: 170px; }
     
-    .kjtd .bjgl-list .panel-body ul li:hover, .kjtd .bjgl-list .panel-body ul li.on{border-left-color:#CFC;}
-    .kjtd .panel-heading {padding: 10px 0;}
-
-    .kjtd .panel-heading11{ padding: 17px 15px;}
-    .kjtd .panel-heading11 .btn-success{margin-top: -7px;}
-    .kjtd .bianji label {font-weight: 400; }
-
-    .kjtd .bianji li {height: 50px;}
-    .kjtd .bianji li i {float:left;}
-    .kjtd .bianji  input[type="text"] { width: 60%; min-width: 110px;float: left; margin-top: -3px;}
-
-
-    .kjtd .table a{ display: inline-block; width: 30%; text-align: center;}
-    .kjtd #js-bianji {display: none;}
-    .kjtd .panel-body{ padding-top:10px; padding-bottom:0px;}
-
-    .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 60%;}
-    .kjtd #js-bianji .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) li{ height: 100%;}
-
-
-   /* 单页面私有*/
-    .kjtd-x #js-table .bootstrap-select{width: auto;}
-    .kjtd-x .table #js-table .dropdown-menu a{width: 100%;}
-</style>
 </head>
 
 <body class="sticky-header">
@@ -161,7 +127,7 @@
 
 
                 <li class="menu-list nav-active">
-                    <a href="javascript:;"><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
+                    <a href=""><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
                     <ul class="sub-menu-list">
                         <li class="active"><a href="kjtd_xueyuantongdao.html">学员通道</a></li>
                         <li class=""><a href="kjtd_banjitongdao.html">班级通道</a></li>        
@@ -187,11 +153,11 @@
             <div class="menu-right">
                 <ul class="notification-menu">
                     <li>
-                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
+                        <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="#"><i class="fa fa-user"></i>个人资料</a></li>
-                            <li><a href="#"><i class="fa fa-cog"></i>我的设置</a></li>
-                            <li><a href="#"><i class="fa fa-sign-out"></i>安全退出</a></li>
+                            <li><a href=""><i class="fa fa-user"></i>个人资料</a></li>
+                            <li><a href=""><i class="fa fa-cog"></i>我的设置</a></li>
+                            <li><a href=""><i class="fa fa-sign-out"></i>安全退出</a></li>
                         </ul>
                     </li>
 
@@ -219,7 +185,7 @@
                         <button class="btn btn-warning " type="button">
                             <i class="fa fa-upload"></i> 导入学员 
                         </button>         
-                        <a href="javascript:;">下载导入模板</a>
+                        <a href="">下载导入模板</a>
                     </div>
                     <button class="btn btn-success " type="button" data-toggle="modal" href="" id="js-addxueyuan"><i class="fa fa-plus "></i> 添加学员 </button>
                   </header>
@@ -252,9 +218,9 @@
                  </div>
 
                 <ul class="pagination mr10 fr">
-                    <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
-                    <li class="active"><a href="javascript:;">1</a></li>
-                    <li><a href="javascript:;" class="fa fa-caret-right"></a></li>
+                    <li><a href="" class=" fa fa-caret-left"></a></li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="" class="fa fa-caret-right"></a></li>
                  </ul>
             </section> 
 
@@ -293,9 +259,11 @@
                                     <input type="text" placeholder="请输入" class="form-control"  />
                             </li>
                            <li class="col-lg-4"><i class="c-999">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;：</i>
-                                                
-                                <label for="man"><input type="radio" value="男" name="man" id="man"/> <span>男</span></label>
-                                <label for="man2"><input type="radio" value="女" name="man" id="man2"/><span>女</span></label>
+                                <div class="fl lableodd center">
+                                     <label for="man"><input type="radio" value="男" name="man" id="man"/> <span>男</span></label>
+                                    <label for="man2"><input type="radio" value="女" name="man" id="man2"/><span>女</span></label>
+                                </div>    
+                               
                            </li>
                            <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>
                                 <select  class="selectpicker">
@@ -306,7 +274,7 @@
                                     <option>五年级</option>
                                 </select>
                            </li>
-                           <li class="col-lg-4"><i class="c-999">班&nbsp;主&nbsp;任&nbsp;：</i>
+                           <li class="col-lg-4"><i class="c-999">班&nbsp;&nbsp;主&nbsp;&nbsp;任：</i>
                                 <select  class="selectpicker">
                                     <option>王老师</option>
                                     <option>李老师</option>
@@ -333,122 +301,119 @@
                         </button>   
                         <span class="red">注意：只可添加一对一课程，班组课请到班级中添加</span> 
                     </header>
-
-                    <div class="adv-table mtop10 ">
-                        <p class="red lh30">共<span>6</span>个课程，<span>3</span>个正常课程</p> 
+                    <p class="red lh30">共<span>6</span>个课程，<span>3</span>个正常课程</p> 
                        
-                    </div>
-                        <table  class=" table table-bordered table-striped caozuo">
-                            <thead>
-                                <tr>
-                                    <th width="8%" >序号</th>
-                                    <th width="15%">科目</th>
-                                    <th width="15%" >班级名称</th>
-                                    <th width="13%">教师</th>
-                                    <th width="10%">辅导方式</th>
-                                    <th width="10%" >状态</th>
-                                    <th width="50%" >操作</th>
-                                </tr>
-                            </thead>
-                            <tbody class="center" id="js-table">
-                                <tr>
-                                    <td width="8%"> 1</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
-                                    <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="javascrip::">复课</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >更换教师</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >删除</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="8%"> 2</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">/</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">班组课</td>
-                                    <td  width="10%"><span class="green">正常</span></td>
-                                    <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >更换教师</a>
-                                        <a class="c-999" data-toggle="modal" href="javascrip::" >删除</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="8%"> 3</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
-                                    <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >更换教师</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >删除</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="8%"> 4</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">/</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">班组课</td>
-                                    <td  width="10%"><span class="green">正常</span></td>
-                                    <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >更换教师</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >删除</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="8%"> 5</td>
-                                    <td width="15%">小学语文</td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="10%">李雷</td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
-                                    <td  width="40%">
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >更换教师</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >删除</a>
-                                    </td>
-                                </tr>
-                                <!-- <tr>
-                                    <td width="8%"> 6</td>
-                                    <td width="15%">
-                                        <select class="selectpicker">
-                                            <option>小学语文</option>
-                                            <option>小学数学</option>
-                                            <option>小学英语</option>
-                                            <option>小学物理</option>
-                                        </select>
-                                    </td>                                        
-                                    <td width="15%">2016秋季培训</td>                                     
-                                    <td width="13%">
-                                        <span>李老师</span>
-                                        <select class="selectpicker">
-                                            <option>李老师</option>
-                                            <option>张老师</option>
-                                        </select>
-                                    </td>                                      
-                                    <td  width="10%">一对一</td>
-                                    <td  width="10%"><span class="red">停课</span></td>
-                                    <td  width="40%">
-                                        <a class="green-a inline-block" data-toggle="modal" href="javascrip::" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >保存</a>
-                                        <a class="green-a" data-toggle="modal" href="javascrip::" >删除</a>
-                                    </td>
-                                </tr> -->
-                            </tbody>        
-                        </table>
+                    <table  class=" table table-bordered table-striped caozuo">
+                        <thead>
+                            <tr>
+                                <th width="8%" >序号</th>
+                                <th width="15%">科目</th>
+                                <th width="15%" >班级名称</th>
+                                <th width="13%">教师</th>
+                                <th width="10%">辅导方式</th>
+                                <th width="10%" >状态</th>
+                                <th width="50%" >操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="center" id="js-table">
+                            <tr>
+                                <td width="8%"> 1</td>
+                                <td width="15%">小学语文</td>                                        
+                                <td width="15%">2016秋季培训</td>                                     
+                                <td width="10%">李雷</td>                                      
+                                <td  width="10%">一对一</td>
+                                <td  width="10%"><span class="red">停课</span></td>
+                                <td  width="50%">
+                                    <a class="green-a" data-toggle="modal" href="">复课</a>
+                                    <a class="green-a" data-toggle="modal" href="" >更换教师</a>
+                                    <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="8%"> 2</td>
+                                <td width="15%">小学语文</td>                                        
+                                <td width="15%">/</td>                                     
+                                <td width="10%">李雷</td>                                      
+                                <td  width="10%">班组课</td>
+                                <td  width="10%"><span class="green">正常</span></td>
+                                <td  width="50%">
+                                    <a class="green-a" data-toggle="modal" href="" >停课</a>
+                                    <a class="green-a" data-toggle="modal" href="" >更换教师</a>
+                                    <a class="c-999" data-toggle="modal" href="" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="8%"> 3</td>
+                                <td width="15%">小学语文</td>                                        
+                                <td width="15%">2016秋季培训</td>                                     
+                                <td width="10%">李雷</td>                                      
+                                <td  width="10%">一对一</td>
+                                <td  width="10%"><span class="red">停课</span></td>
+                                <td  width="50%">
+                                    <a class="green-a" data-toggle="modal" href="" >复课</a>
+                                    <a class="green-a" data-toggle="modal" href="" >更换教师</a>
+                                    <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="8%"> 4</td>
+                                <td width="15%">小学语文</td>                                        
+                                <td width="15%">/</td>                                     
+                                <td width="10%">李雷</td>                                      
+                                <td  width="10%">班组课</td>
+                                <td  width="10%"><span class="green">正常</span></td>
+                                <td  width="50%">
+                                    <a class="green-a" data-toggle="modal" href="" >停课</a>
+                                    <a class="green-a" data-toggle="modal" href="" >更换教师</a>
+                                    <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="8%"> 5</td>
+                                <td width="15%">小学语文</td>                                        
+                                <td width="15%">2016秋季培训</td>                                     
+                                <td width="10%">李雷</td>                                      
+                                <td  width="10%">一对一</td>
+                                <td  width="10%"><span class="red">停课</span></td>
+                                <td  width="40%">
+                                    <a class="green-a" data-toggle="modal" href="" >复课</a>
+                                    <a class="green-a" data-toggle="modal" href="" >更换教师</a>
+                                    <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td width="8%"> 6</td>
+                                <td width="15%">
+                                    <select class="selectpicker">
+                                        <option>小学语文</option>
+                                        <option>小学数学</option>
+                                        <option>小学英语</option>
+                                        <option>小学物理</option>
+                                    </select>
+                                </td>                                        
+                                <td width="15%">2016秋季培训</td>                                     
+                                <td width="10%">
+                                    
+                                    <select class="selectpicker">
+                                        <option>李老师</option>
+                                        <option>张老师</option>
+                                    </select>
+                                </td>                                      
+                                <td  width="10%">一对一</td>
+                                <td  width="10%"><span class="red">停课</span></td>
+                                <td  width="40%">
+                                    <a class="green-a inline-block" data-toggle="modal" href="" >复课</a>
+                                    <a class="green-a" data-toggle="modal" href="" >保存</a>
+                                    <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                </td>
+                            </tr> -->
+                        </tbody>        
+                    </table>
                 </div>
                  <ul class="pagination mr10 fr">
                     <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
                     <li><a href="javascript:;">1</a></li>
-                    <li class="active"><a href="#">2</a></li>
+                    <li class="active"><a href="javascripr:;">2</a></li>
                     <li><a href="javascript:;" class="fa fa-caret-right"></a></li>
                  </ul>
             </section>    
@@ -471,111 +436,12 @@
 <script src="js/btSelect/bootstrap-select.min.js"></script>
 <!--date -->
 <script type="text/javascript" src="js/date/date.js"></script>
+<!-- timer chajian -->
+<script src="js/datetimepicker/jquery.datetimepicker.full.js"></script>
 <!--common scripts for all pages  所有页面的 js-->
 <script src="js/scripts.js"></script>
 
 
-<script type="text/javascript">
-
-
-
-
-
-$(function(){
-        
-        xueyuanguanli()
-        function xueyuanguanli(){
-                var $btn = $(".kjtd-x #js-btn");
-                var $btn1 = $(".kjtd-x #js-btn1");
-                var $bianji = $(".kjtd-x #js-bianji");
-                var $baocun = $(".kjtd-x #js-baocun");
-                var $add = $(".kjtd-x #js-add");
-                var $table = $(".kjtd-x #js-table");
-                 var $addxueyuan = $(".kjtd-x #js-addxueyuan");
-                var length = $(".kjtd-x #js-table tr").length;
-                   
-
-               $addxueyuan.click(function(){ 
-                   $baocun.hide();
-                   $bianji.show()
-                })
-               
-                $btn.click(function(){ 
-                   $baocun.hide();
-                   $bianji.show()
-                })
-                $btn1.click(function(){ 
-                   $baocun.show();
-                   $bianji.hide()
-                })
-
-                $add.click(function(){
-                    length+=1;
-                    $table.append('<tr><td width="8%">'+length+'</td><td width="15%"><select class="selectpicker"><option>小学语文</option><option>小学数学</option><option>小学英语</option><option>小学物理</option></select></td><td width="15%">2016秋季培训</td><td width="13%"><select class="selectpicker"><option>李老师</option><option>张老师</option></select> </td> <td  width="10%">一对一</td><td  width="10%"><span class="green">正常</span></td><td  width="40%">                                        <a class="green-a inline-block" data-toggle="modal" href="javascrip::" >复课</a><a class="green-a" data-toggle="modal" href="javascrip::" >保存</a><a class="green-a" data-toggle="modal" href="javascrip::" >删除</a></td></tr>');
-
-                    $('.selectpicker').selectpicker();// 插入后重载样式 否则样式丢失
-                })
-
-
-                $table.click(function(ev){
-                    var ev = ev || window.event;
-                    var target = ev.target || ev.srcElement;
-
-                    if(target.nodeName.toLocaleLowerCase() == 'a'){
-                            var $elem = $(ev.target).parents('tr').children();
-                            var val ="";
-
-                        switch(target.innerHTML){
-                            case '保存' :
-
-                                val =$elem.eq(1).find('select').val();
-                                $elem.eq(1).html(val);
-                                $elem.eq(3).html($elem.eq(3).find('select').val());
-                                $(target).html('更换教师');
-
-                                break;
-                            case '删除' :
-
-                                $(ev.target).parents('tr').remove();
-                                //ajax请求
-                                break;
-                            case '更换教师' :
-                                $(target).html('保存');
-                                val = $elem.eq(3).html();
-                                // $elem.eq(1).find('input').val();
-                                $elem.eq(3).html('<select class="selectpicker"><option>'+val+'</option><option>张老师</option></select>');
-
-                                $('.selectpicker').selectpicker();// 插入后重载样式
-                                
-                                break;
-                            case '复课' :
-                             
-                                $elem.eq(3).html($elem.eq(3).find('select').val());
-                                $(target).html('停课');
-                                $(target).removeClass('green').addClass('red');
-                                $elem.eq(5).html('<span class="green">正常</span>')
-
-                                break;
-                            case '停课' :
-
-                                $elem.eq(3).html($elem.eq(3).find('select').val());
-                                $(target).html('复课');
-                                $(target).removeClass('red').addClass('rgreen');
-                                $elem.eq(5).html('<span class="red">停课</span>')
-
-                                break;
-                        }
-                    } 
-                    
-                })
-        }
-
-
-
-
-})
-
-</script>
 
 
 </body>

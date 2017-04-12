@@ -13,7 +13,7 @@
     if ($('body').hasClass('left-side-collapsed')) {
         $(".left-side").getNiceScroll().hide();
     }
-
+    
 
 
     // Toggle Left Menu
@@ -366,7 +366,7 @@
         }else if(v2*1<=v1*1){
           alert(einfo)         
         }else{
-
+             
           list.append(html);
           arr.eq(1).on("focusout",function(){
             var it=list.find("input");
@@ -507,6 +507,218 @@
   })
 
   
+// 班级通道
+
+    banjitongdao();
+    xueyuanguanli();
+
+    function banjitongdao(){
+        var $btn = $(".kjtd-b #js-btn");
+        var $btn1 = $(".kjtd-b #js-btn1");
+        var $bianji = $(".kjtd-b #js-bianji");
+        var $baocun = $(".kjtd-b #js-baocun");
+        var $table = $(".kjtd-b #js-table");
+        var $banji = $(".kjtd-b #js-tianjiabanji");
+        var $tiaoke = $(".kjtd1 #js-table");
+        var $checkbox = $(".kjtd1 #tjxy-table");
+        var $jstishi = $(".kjtd1 #js-checkds");
+        console.log($jstishi)
+      
+       $banji.click(function(){ 
+           $baocun.hide();
+           $bianji.show()
+        })
+        $btn.click(function(){ 
+           $baocun.hide();
+           $bianji.show()
+        })
+        $btn1.click(function(){ 
+           $baocun.show();
+           $bianji.hide()
+        })
+    //checkbox 选中  还没写
+        // $checkbox.click(function(ev){
+        //     var ev = ev || window.event;
+        //         var target = ev.target || ev.srcElement;
+        //         if(target.nodeName.toLocaleLowerCase() == 'a'){
+        //                 var $elem = $(ev.target).parents('tr').children();
+        //             switch(target.innerHTML){
+        //                 case '删除' :
+        //                     $(ev.target).parents('tr').remove();
+        //                     //ajax请求
+        //                     break;
+        //                 case '复课' :
+        //                     $(target).html('停课');
+        //                     $elem.eq(2).html('<span class="green">正常</span>')
+        //                     break;
+        //                 case '停课' :
+        //                     $(target).html('复课');
+        //                     $elem.eq(2).html('<span class="red">停课</span>')
+        //                     break;
+        //             }
+        //         } 
+        // })
+
+
+
+
+        $table.click(function(ev){
+                var ev = ev || window.event;
+                var target = ev.target || ev.srcElement;
+                if(target.nodeName.toLocaleLowerCase() == 'a'){
+                        var $elem = $(ev.target).parents('tr').children();
+                    switch(target.innerHTML){
+                        case '删除' :
+                            $(ev.target).parents('tr').remove();
+                            //ajax请求
+                            break;
+                        case '复课' :
+                            $(target).html('停课');
+                            $elem.eq(2).html('<span class="green">正常</span>')
+                            break;
+                        case '停课' :
+                            $(target).html('复课');
+                            $elem.eq(2).html('<span class="red">停课</span>')
+                            break;
+                    }
+                }       
+        })
+
+        $('#xtsz-addKechengModal input').iCheck({// 复选框样式
+            checkboxClass: 'icheckbox_square-green',
+        })
+
+      //调课弹窗
+        $tiaoke.click(function(ev){
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+
+            if(target.nodeName.toLocaleLowerCase() == 'a'){
+                    var $elem = $(ev.target).parents('tr').children();
+                    var val ="";
+                switch(target.innerHTML){
+                    case '保存' :
+                        val =$elem.eq(1).find('input').val();
+                        $elem.eq(1).html(val)
+                        $(target).html('修改时间');
+                        break;
+                    case '删除' :
+                        $(ev.target).parents('tr').remove();
+                        //ajax请求
+                        break;
+                    case '修改时间' :
+                        $(target).html('保存');
+                        val = $elem.eq(1).html().trim();
+                        $elem.eq(1).html('<input class="laydate-icon assessover-data17 center" type="text" value="'+val+'" placeholder="选择时间" style="width:100%">')
+                        datetimepickerRes('.assessover-data17') //这个加载出来  还得调方法
+
+                        break;
+        
+                }
+            }                   
+        })
+      //时间插件的初始化
+        function datetimepickerRes(dateres){
+          $(dateres).datetimepicker({
+                      datepicker:true,
+                      minHours:6,
+                      maxHours:23,
+                      format:'Y-m-d H:i',
+                      step:10
+                    });
+        }
+
+    };
+
+        
+    function xueyuanguanli(){
+            var $btn = $(".kjtd-x #js-btn");
+            var $btn1 = $(".kjtd-x #js-btn1");
+            var $bianji = $(".kjtd-x #js-bianji");
+            var $baocun = $(".kjtd-x #js-baocun");
+            var $add = $(".kjtd-x #js-add");
+            var $table = $(".kjtd-x #js-table");
+             var $addxueyuan = $(".kjtd-x #js-addxueyuan");
+            var length = $(".kjtd-x #js-table tr").length;
+               
+
+           $addxueyuan.click(function(){ 
+               $baocun.hide();
+               $bianji.show()
+            })
+           
+            $btn.click(function(){ 
+               $baocun.hide();
+               $bianji.show()
+            })
+            $btn1.click(function(){ 
+               $baocun.show();
+               $bianji.hide()
+            })
+
+            $add.click(function(){
+                length+=1;
+                $table.append('<tr><td width="8%">'+length+'</td><td width="15%"><select class="selectpicker"><option>小学语文</option><option>小学数学</option><option>小学英语</option><option>小学物理</option></select></td><td width="15%">2016秋季培训</td><td width="13%"><select class="selectpicker"><option>李老师</option><option>张老师</option></select> </td> <td  width="10%">一对一</td><td  width="10%"><span class="green">正常</span></td><td  width="40%">                                        <a class="green-a inline-block" data-toggle="modal" href="" >停课</a><a class="green-a" data-toggle="modal" href="" >保存</a><a class="green-a" data-toggle="modal" href="" >删除</a></td></tr>');
+
+                $('.selectpicker').selectpicker();// 插入后重载样式 否则样式丢失
+            })
+
+
+            $table.click(function(ev){
+                var ev = ev || window.event;
+                var target = ev.target || ev.srcElement;
+
+                if(target.nodeName.toLocaleLowerCase() == 'a'){
+                        var $elem = $(ev.target).parents('tr').children();
+                        var val ="";
+
+                    switch(target.innerHTML){
+                        case '保存' :
+
+                            val =$elem.eq(1).find('select').val();
+                            $elem.eq(1).html(val);
+                            $elem.eq(3).html($elem.eq(3).find('select').val());
+                            $(target).html('更换教师');
+
+                            break;
+                        case '删除' :
+
+                            $(ev.target).parents('tr').remove();
+                            //ajax请求
+                            break;
+                        case '更换教师' :
+                            $(target).html('保存');
+                            val = $elem.eq(3).html();
+                            $elem.eq(3).html('<select class="selectpicker"><option>'+val+'</option><option>张老师</option></select>');
+
+                            $('.selectpicker').selectpicker();// 插入后重载样式否则样式丢失
+                            
+                            break;
+                        case '复课' :
+                            // $elem.eq(3).html($elem.eq(3).find('select').val());
+                            $(target).html('停课');
+                            $elem.eq(5).html('<span class="green">正常</span>')
+
+                            break;
+                        case '停课' :
+
+                            // $elem.eq(3).html($elem.eq(3).find('select').val());
+                            $(target).html('复课');
+                            $elem.eq(5).html('<span class="red">停课</span>')
+
+                            break;
+                    }
+                } 
+                
+            })
+    }
+
+    
+
+
+
+
+
 
 
 

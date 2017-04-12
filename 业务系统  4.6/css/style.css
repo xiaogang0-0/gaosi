@@ -904,3 +904,65 @@ p{margin:0}
 .tabs-left > .nav-pills > li.active > a{background:#81ce80;color:#fff}  
 .tabs-left > .tab-content{width:400px;}
 .tabs-left > .tab-content label{font-weight:normal;padding-left:5px;cursor:pointer;} 
+
+
+
+
+
+ /*快捷通道公用样式*/
+    .kjtd .bjgl-list1 {width: 28%;}
+    .kjtd .red {font-size: 14px; font-weight: 400; color: red;}
+    .kjtd .green {font-size: 14px; font-weight: 400; color: green;}
+    .kjtd .panel-heading a {display: none;color: #ff9900;font-weight: 400;margin: 0 15px; font-size: 12px;}
+    .kjtd .bossss {display: inline-block; }
+    .kjtd .bossss:hover a{ display: inline-block;}
+    .kjtd .search-box .sb1-input {width: 66%;min-width: 170px; }
+    .kjtd .bjgl-list .panel-body ul li:hover, .kjtd .bjgl-list .panel-body ul li.on{border-left-color:#CFC;}
+    .kjtd .panel-heading {padding: 10px 0;}
+    .kjtd .panel-heading11{ padding: 17px 15px;}
+    .kjtd .panel-heading11 .btn-success{margin-top: -7px;}
+    .kjtd .bianji label {font-weight: 400; }
+
+    .kjtd .bianji li {line-height: 40px;}
+    .kjtd .bianji li i {float:left;line-height: 35px; width: 80px; ;margin-top: 3px }
+    .kjtd .bianji  input[type="text"] { width: 60%;float: left;margin-top: 3px }
+    .kjtd .bianji li .lableodd { width: 60%;float: left;line-height: 37px; }
+    .kjtd .bianji li .lableodd label{margin: 3px 25px 0 0;}
+
+
+
+    .kjtd .table a{ display: inline-block; width: 30%; text-align: center;}
+    .kjtd #js-bianji {display: none;}
+    .kjtd .panel-body{ padding-top:10px; padding-bottom:10px;}
+    .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 60%;}
+    .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) li{ height: 100%;} 
+
+   
+
+
+    /* 班级通道私有*/
+    .paike-tanchuang .modal-content { width:80%;}
+     #js-tishi span {padding-right: 14%;}
+     #js-tishi i {margin-left: 8  %;}
+    .kjtd1  #js-table a {display: inline-block;width: 45%;}
+    .kjtd1 #modal-bodyone .form-control {width: 50%;}
+    .kjtd1 #modal-bodyone .modal-info>ul>li>span {width:70px;}
+    .kjtd1 #modal-bodyone .editinfo>ul>li {width: 25%; float: left;}
+    .kjtd1 .modal-info>ul>li {clear: none;}
+    .kjtd1  #tjxy-table .square-green {vertical-align: top;}
+    .kjtd1  #tjxy-table .square-green .icheckbox_square-green{float: left;}/*新加*/
+
+    /*         */
+    /*.adv-table .table tr:hover td {border-color:#ddd;  }*/
+
+   .adv-table .table .m-tr:hover td{background:#fff; border:1px solid #ddd;}
+
+    .panel-body .adv-table .table .m-tr td:hover{background:#ccffcc; border:1px solid #aaffaa;}
+    .kjtd1 .panel-body {padding:10px;}
+
+
+
+
+     /* 学员通道私有*/
+    .kjtd-x #js-table .bootstrap-select{width: auto;}
+    .kjtd-x .table #js-table .dropdown-menu a{width: 100%;}

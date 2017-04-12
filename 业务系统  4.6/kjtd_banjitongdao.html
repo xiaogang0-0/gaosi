@@ -27,55 +27,7 @@
   <script src="js/respond.min.js"></script>
   <![endif]-->
 
-<style type="text/css">
-   /*双页面共有*/
-    .kjtd .bjgl-list1 {width: 28%;}
-    .kjtd .red {font-size: 12px; font-weight: 400; color: red;}
-    .kjtd .green {font-size: 12px; font-weight: 400; color: green;}
 
-    .kjtd .panel-heading a {display: none;color: #ff9900;font-weight: 400;margin: 0 15px; font-size: 12px;}
-    .kjtd .bossss {display: inline-block; }
-    .kjtd .bossss:hover a{ display: inline-block;}
-    .kjtd .search-box .sb1-input {width: 66%;min-width: 170px; }
-    
-    .kjtd .bjgl-list .panel-body ul li:hover, .kjtd .bjgl-list .panel-body ul li.on{border-left-color:#CFC;}
-    .kjtd .panel-heading {padding: 10px 0;}
-
-    .kjtd .panel-heading11{ padding: 17px 15px;}
-    .kjtd .panel-heading11 .btn-success{margin-top: -7px;}
-    .kjtd .bianji label {font-weight: 400; }
-
-    .kjtd .bianji li {height: 50px;}
-    .kjtd .bianji li i {float:left;}
-    .kjtd .bianji  input[type="text"] { width: 60%; min-width: 110px;float: left; margin-top: -3px;}
- 
-    .kjtd .table a{ display: inline-block; width: 30%; text-align: center;}
-    .kjtd #js-bianji {display: none;}
-    .kjtd .panel-body{ padding-top:10px; padding-bottom:0px;}
-
-    .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: 60%;}
-    .kjtd .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) li{ height: 100%;} 
-    
-
-
-    /* 单页面私有*/
-    .kjtd1 #js-tishi { padding-left: 40px;}
-     #js-tishi span {padding-right: 20%;}
-    .kjtd1  #js-table a {display: inline-block;width: 45%;}
-    .kjtd1 #modal-bodyone .form-control {width: 50%;}
-    .kjtd1 #modal-bodyone .modal-info>ul>li>span {width:70px;}
-    .kjtd1 #modal-bodyone .editinfo>ul>li {width: 25%; float: left;}
-    .kjtd1 .modal-info>ul>li {clear: none;}
-
-    .kjtd1  #tjxy-table .square-green {vertical-align: top;}
-    .kjtd1  #tjxy-table .square-green .icheckbox_square-green{float: left;}/*新加*/
-
-
-    .adv-table .table tr:hover td {
-        border-color:#ddd; 
-    }
-
-</style>
 </head>
 
 <body class="sticky-header">
@@ -172,7 +124,7 @@
                 </li>
                 <li><a href="sjtj_shujutongji-echarts.html"><i class="fa fa-bar-chart-o"></i> <span>数据统计</span></a></li>
                 <li class="menu-list nav-active">
-                    <a href="javascript:;"><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
+                    <a href=""><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
                     <ul class="sub-menu-list">
                         <li class=""><a href="kjtd_xueyuantongdao.html">学员通道</a></li>
                         <li class="active"><a href="kjtd_banjitongdao.html">班级通道</a></li>        
@@ -195,11 +147,11 @@
             <div class="menu-right">
                 <ul class="notification-menu">
                     <li>
-                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
+                        <a href="javascripr:;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="#"><i class="fa fa-user"></i>个人资料</a></li>
-                            <li><a href="#"><i class="fa fa-cog"></i>我的设置</a></li>
-                            <li><a href="#"><i class="fa fa-sign-out"></i>安全退出</a></li>
+                            <li><a href="javascripr:;"><i class="fa fa-user"></i>个人资料</a></li>
+                            <li><a href="javascripr:;"><i class="fa fa-cog"></i>我的设置</a></li>
+                            <li><a href="javascripr:;"><i class="fa fa-sign-out"></i>安全退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -250,9 +202,9 @@
                     </ul>
                  </div>
                 <ul class="pagination mr10 fr">
-                    <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
-                    <li class="active"><a href="javascript:;">1</a></li>
-                    <li><a href="javascript:;" class="fa fa-caret-right"></a></li>
+                    <li><a href="" class=" fa fa-caret-left"></a></li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="" class="fa fa-caret-right"></a></li>
                  </ul>
             </section> 
 
@@ -300,7 +252,7 @@
                                     <option>五年级</option>
                                 </select>
                             </li>
-                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师&nbsp;：</i>
+                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师：</i>
                                <select  class="selectpicker">
                                     <option>王老师</option>
                                     <option>李老师</option>
@@ -352,8 +304,8 @@
                                     <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="red">停课</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green" data-toggle="modal" href="" >复课</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -361,8 +313,8 @@
                                     <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green" data-toggle="modal" href="" >停课</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -370,8 +322,8 @@
                                     <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green" data-toggle="modal" href="" >停课</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -379,8 +331,8 @@
                                     <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green" data-toggle="modal" href="" >停课</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -388,18 +340,18 @@
                                     <td width="20%">王晓磊（012502448）</td> 
                                     <td  width="10%"><span class="green">正常</span></td>
                                     <td  width="50%">
-                                        <a class="green-a" data-toggle="modal" href="###" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
+                                        <a class="green" data-toggle="modal" href="" >停课</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
                                     </td>
                                 </tr>
                             </tbody>        
                         </table>
                 </div>
                  <ul class="pagination mr10 fr">
-                    <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
-                    <li><a href="javascript:;">1</a></li>
-                    <li class="active"><a href="#">2</a></li>
-                    <li><a href="javascript:;" class="fa fa-caret-right"></a></li>
+                    <li><a href="" class=" fa fa-caret-left"></a></li>
+                    <li><a href="">1</a></li>
+                    <li class="active"><a href="">2</a></li>
+                    <li><a href="" class="fa fa-caret-right"></a></li>
                  </ul>
             </section> 
         </div>
@@ -458,34 +410,60 @@
                         </ul>
                     </div>
                     <div class="panel-body">
-                        <div class="adv-table">
+                        <div class="adv-table" >
                             <table id="tjxy-table" class="display table table-bordered table-striped">
                                 <tbody class="center"> 
-                                    <tr>
-                                        <td>
-                                            <div class="square-green single-row inline-block" >
-                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                  
+                                    <tr class="m-tr row">
+                                      <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
                                             </div>
+                                            <span class="col-md-9">张 (123456789)</span>
                                         </td>
-                                        <td>
-                                            <div class="square-green single-row inline-block" >
-                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                        <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
                                             </div>
+                                            <span class="col-md-9">张小磊 (123456789)</span>
+                                        </td>  
+                                        <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊 (123456789)</span>
                                         </td>
-                                        <td>
-                                            <div class="square-green single-row inline-block" >
-                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                        <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
                                             </div>
+                                            <span class="col-md-9">张小磊磊(123456789)</span>
                                         </td>
-                                        <td>
-                                            <div class="square-green single-row inline-block" >
-                                                <input type="checkbox"><span>张小伟(02211368)</span>
+                                    </tr> 
+                                    <tr class="m-tr row">
+                                      <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
                                             </div>
+                                            <span class="col-md-9">张 (123456789)</span>
                                         </td>
-                                        <td>
-                                            <div class="square-green single-row inline-block" >
-                                                <input type="checkbox" class=""><span>张小伟(02211368)</span>
+                                        <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
                                             </div>
+                                            <span class="col-md-9">张小磊 (123456789)</span>
+                                        </td>  
+                                        <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊 (123456789)</span>
+                                        </td>
+                                        <td class="col-md-3">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊磊(123456789)</span>
                                         </td>
                                     </tr>
                                 </tbody>        
@@ -495,7 +473,7 @@
                     <hr>
                     <div class="modal-btnbox">
                         <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
-                        <span class="red ml10">提示：已选择<span class="">12</span>人</span>
+                        <span class="red ml10" id="js-checkds">提示：已选择<span class="">12</span>人</span>
                     </div>   
             </div>
         </div>
@@ -563,23 +541,45 @@
                                 <tr> 
                                     <td width="10%">1</td>
                                     <td width="40%">
-                                        <input id="assessover-data15" class="laydate-icon" type="text" value="" placeholder="选择时间" style="width:100%">
+                                        <input id="assessover-data15" class="laydate-icon " type="text" value="2017-04-28 09:33" placeholder="选择时间" style="width:100%">
                                     </td>
                                     <td width="15%">杨克林</td>
                                     <td  width="40%" class="js-reombtn">
-                                        <a class="green-a"  href="javascript::" >保存</a>
-                                        <a class="green-a"  href="javascript:;" >删除</a>
+                                        <a class="green-a"  href="javascripr:;" >保存</a>
+                                        <a class="green-a"  href="" >删除</a>
                                     </td>  
                                 </tr>
                                 <tr> 
                                     <td width="15%">2</td>
                                     <td width="35%">
-                                        2016-01-01 16:30-20:30
+                                        2017-04-28 09:33
                                     </td>
                                     <td width="10%">杨克林</td>
                                     <td  width="40%" class="js-reombtn">
-                                        <a class="green-a" data-toggle="modal" href="javascript:;" >修改时间</a>
-                                        <a class="green-a" data-toggle="modal" href="javascript:;" >删除</a>
+                                        <a class="green-a" data-toggle="modal" href="" >修改时间</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                    </td>  
+                                </tr>
+                                <tr> 
+                                    <td width="15%">3</td>
+                                    <td width="35%">
+                                        2017-04-28 09:33
+                                    </td>
+                                    <td width="10%">杨克林</td>
+                                    <td  width="40%" class="js-reombtn">
+                                        <a class="green-a" data-toggle="modal" href="" >修改时间</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                    </td>  
+                                </tr>
+                                <tr> 
+                                    <td width="15%">4</td>
+                                    <td width="35%">
+                                        2017-04-28 09:33
+                                    </td>
+                                    <td width="10%">杨克林</td>
+                                    <td  width="40%" class="js-reombtn">
+                                        <a class="green-a" data-toggle="modal" href="" >修改时间</a>
+                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
                                     </td>  
                                 </tr>
                             </tbody>        
@@ -616,106 +616,10 @@
 <!--common scripts for all pages  所有页面的 js-->
 <script src="js/scripts.js"></script>
 
-<script type="text/javascript">
-$(function(){
-
-
-    banjitongdao();
-
-
-
-    function banjitongdao(){
-        var $btn = $(".kjtd #js-btn");
-        var $btn1 = $(".kjtd #js-btn1");
-        var $bianji = $(".kjtd #js-bianji");
-        var $baocun = $(".kjtd #js-baocun");
-        var $table = $(".kjtd #js-table");
-        var $banji = $(".kjtd #js-tianjiabanji");
-        var $tiaoke = $(".kjtd1 #js-table");
-      
-        
-       $banji.click(function(){ 
-           $baocun.hide();
-           $bianji.show()
-        })
-        $btn.click(function(){ 
-           $baocun.hide();
-           $bianji.show()
-        })
-        $btn1.click(function(){ 
-           $baocun.show();
-           $bianji.hide()
-        })
-
-        $table.click(function(ev){
-            if(ev.target.innerHTML == "复课"){
-                // alert(ev.target.innerHTML)
-            }else if( ev.target.innerHTML =="删除"){
-                // alert(ev.target.innerHTML)
-            }
-        })
-        
-        $('#xtsz-addKechengModal input').iCheck({// 复选框样式
-            checkboxClass: 'icheckbox_square-green',
-        })
-
-        $tiaoke.click(function(ev){
-            var ev = ev || window.event;
-            var target = ev.target || ev.srcElement;
-
-            if(target.nodeName.toLocaleLowerCase() == 'a'){
-                    var $elem = $(ev.target).parents('tr').children();
-                    var val ="";
-                switch(target.innerHTML){
-                    case '保存' :
-
-                        val =$elem.eq(1).find('input').val();
-                        $elem.eq(1).html(val)
-                        $(target).html('修改时间');
-
-                        break;
-                    case '删除' :
-
-                        $(ev.target).parents('tr').remove();
-                        //ajax请求
-                        break;
-                    case '修改时间' :
-                        $(target).html('保存');
-                        val = $elem.eq(1).html(val);
-                        // $elem.eq(1).find('input').val();
-                        $elem.eq(1).html('<input id="assessover-data15" class="laydate-icon" type="text" value="" placeholder="选择时间" style="width:100%">')
-                        //这个加载出来  还得调方法
-                       
-                        $elem.eq(1).find('input').datepicker();
-                        
-                        break;
-        
-                }
-            }                         
-        })
 
 
 
 
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-        
-})
-</script>
 
 </body>
 </html>

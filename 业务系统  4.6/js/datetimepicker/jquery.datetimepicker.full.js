@@ -1608,9 +1608,10 @@ var DateFormatter;
 				var highlightedDates = {};
 
 				options = $.extend(true, {}, options, _options);
-
 				if (_options.allowTimes && $.isArray(_options.allowTimes) && _options.allowTimes.length) {
+                    alert(0)
 					options.allowTimes = $.extend(true, [], _options.allowTimes);
+
 				}
 
 				if (_options.weekends && $.isArray(_options.weekends) && _options.weekends.length) {
