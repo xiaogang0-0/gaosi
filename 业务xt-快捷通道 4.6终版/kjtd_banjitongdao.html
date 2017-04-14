@@ -147,11 +147,11 @@
             <div class="menu-right">
                 <ul class="notification-menu">
                     <li>
-                        <a href="javascripr:;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
+                        <a href="###" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="javascripr:;"><i class="fa fa-user"></i>个人资料</a></li>
-                            <li><a href="javascripr:;"><i class="fa fa-cog"></i>我的设置</a></li>
-                            <li><a href="javascripr:;"><i class="fa fa-sign-out"></i>安全退出</a></li>
+                            <li><a href="###"><i class="fa fa-user"></i>个人资料</a></li>
+                            <li><a href="###"><i class="fa fa-cog"></i>我的设置</a></li>
+                            <li><a href="###"><i class="fa fa-sign-out"></i>安全退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -180,17 +180,16 @@
                         <div class="search-box clearfix " >
                             <input type="text" class="sb-input sb1-input"  />
                             <input type="text" class="hide sb-input" id="J_searchtype" />
-                            <div class="sb-nav" id="J_searchnav" data-toggle="dropdown"><span class=" fa fa-search"></span><i>班主任姓名</i><span class="caret"></span></div>
+                            <div class="sb-nav" id="J_searchnav" data-toggle="dropdown"><span class=" fa fa-search"></span><i>维护人</i><span class="caret"></span></div>
                             <ul class="dropdown-menu" id="J_searchcon">
-                                <li>班主任姓名</li>
                                 <li >维护人</li>
+                                <li>班主任</li>
                             </ul>
-                            <button class="btn sb-btn btn-success btn-lg " type="button">搜索</button>
+                            <button class="btn sb-btn btn-success" type="button">搜索</button>
                         </div>
                   </div>  
-                 <div class="panel-body">
+                 <div class="panel-body panel-llist">
                     <ul class="list-cons center">
-                        <li>2016秋季冲刺一班<span>（056215465）</span></li>
                         <li>2016秋季冲刺一班<span>（056215465）</span></li>
                         <li>2016秋季冲刺一班<span>（056215465）</span></li>
                         <li>2016秋季冲刺一班<span>（056215465）</span></li>
@@ -202,9 +201,9 @@
                     </ul>
                  </div>
                 <ul class="pagination mr10 fr">
-                    <li><a href="" class=" fa fa-caret-left"></a></li>
-                    <li class="active"><a href="">1</a></li>
-                    <li><a href="" class="fa fa-caret-right"></a></li>
+                    <li><a href="###" class=" fa fa-caret-left"></a></li>
+                    <li class="active"><a href="###">1</a></li>
+                    <li><a href="###" class="fa fa-caret-right"></a></li>
                  </ul>
             </section> 
 
@@ -217,7 +216,7 @@
                        <ul class="clearfix lh30 ">
                            <li class="col-lg-4"><i class="c-999">班级名称：</i>2016秋季一班</li>
                            <li class="col-lg-4"><i class="c-999">科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目&nbsp;：</i>小学数学</li>
-                           <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>一年级</li>
+                           <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>小学一年级</li>
                            <li class="col-lg-4"><i class="c-999">教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师&nbsp;：</i>王莉</li>
                            <li class="col-lg-4"><i class="c-999">维&nbsp;&nbsp;护&nbsp;&nbsp;人：</i>王伟</li>
                            <li class="col-lg-4"><i class="c-999">校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区&nbsp;：</i>五道口</li>
@@ -239,17 +238,27 @@
                            </li>
                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：</i>
                                 <select  class="selectpicker">
-                                    <option>小学数学</option>
                                     <option>小学语文</option>
+                                    <option>小学数学</option>
+                                    <option>小学英语</option>
+                                    <option>小学物理</option>
                                 </select>
                            </li>
                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：</i>
                                 <select  class="selectpicker">
-                                    <option>一年级</option>
-                                    <option>二年级</option>
-                                    <option>三年级</option>
-                                    <option>四年级</option>
-                                    <option>五年级</option>
+                                    <option>全部</option>
+                                    <option>小学一年级</option>
+                                    <option>小学二年级</option>
+                                    <option>小学三年级</option>
+                                    <option>小学四年级</option>
+                                    <option>小学五年级</option>
+                                    <option>小学六年级</option>
+                                    <option>初一年级</option>
+                                    <option>初二年级</option>
+                                    <option>初三年级</option>
+                                    <option>高一年级</option>
+                                    <option>高二年级</option>
+                                    <option>高三年级</option>
                                 </select>
                             </li>
                             <li class="col-lg-4"><i class="c-999"><span class="red">*</span>教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师：</i>
@@ -268,9 +277,8 @@
                            </li>
                            <li class="col-lg-4"><i class="c-999">校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区&nbsp;：</i>
                                <select  class="selectpicker">
-                                    <option>五道口</option>
-                                    <option>海淀</option>
-                                    <option>西城</option>
+                                    <option>黄庄小区</option>
+                                    <option>五道口校区</option>
                                 </select>
                             </li>
                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>班级状态：</i>
@@ -283,65 +291,61 @@
                    </div>
             </section>
             <section class="panel bjgl-info">
-                <div class="panel-body">    
+                <div class="panel-body panel-rlist">    
                     <header class="panel-heading  auto">
-                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-addKechengModal"><i class="fa fa-plus"></i> 添加学员 </button>
-                        <button class="btn btn-success " type="button" data-toggle="modal" href="#cwgl-addBeiyongjinModal"><i class="fa fa-plus"></i> 排课 </button>                        <button class="btn btn-success " type="button" data-toggle="modal" href="#xtsz-editKechengModal"><i class="fa fa-pencil-square-o"></i> 调课 </button>
+                        <button class="btn btn-success " type="button" data-toggle="modal" href="#tjxy-addKechengModal"><i class="fa fa-plus"></i> 添加学员 </button>
+                        <button class="btn btn-success " type="button" data-toggle="modal" href="#pktc-addBeiyongjinModal"><i class="fa fa-plus"></i> 排课 </button>                        <button class="btn btn-success " type="button" data-toggle="modal" href="#tktc-editKechengModal"><i class="fa fa-pencil-square-o"></i> 调课 </button>
                     </header>
                         <table  class=" table table-bordered table-striped caozuo">
-                            <p class="red lh30">共<span>26</span>人，<span>23</span>人在读</p> 
+                            <p class="red lh30">共<span>26</span>人，<span>23</span>人在读！</p> 
                              <thead>
                                 <tr>
-                                    <th width="8%" >序号</th>
-                                    <th width="20%">学员</th>
-                                    <th width="10%" >状态</th>
+                                  
+                                    <th width="30%">学员</th>
+                                    <th width="15%" >状态</th>
                                     <th width="50%" >操作</th>
                                 </tr>
                             </thead>
                             <tbody class="center" id="js-table">
                                 <tr>
-                                    <td width="8%"> 1</td>
-                                    <td width="20%">王晓磊（012502448）</td> 
-                                    <td  width="10%"><span class="red">停课</span></td>
+                                  
+                                    <td width="30%">王晓磊（012502448）</td> 
+                                    <td  width="15%"><span class="red">停课</span></td>
                                     <td  width="50%">
-                                        <a class="green" data-toggle="modal" href="" >复课</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                        <a class="green" data-toggle="modal" href="###" >复课</a>
+                                        <a class="green-a" data-toggle="modal" href="###" >删除</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="8%"> 2</td>
-                                    <td width="20%">王晓磊（012502448）</td> 
-                                    <td  width="10%"><span class="green">正常</span></td>
+                                    <td width="30%">王晓磊（012502448）</td> 
+                                    <td  width="15%"><span class="green">正常</span></td>
                                     <td  width="50%">
                                         <a class="green" data-toggle="modal" href="" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                        <sapn class="c-999" data-toggle="modal" href="" >删除</sapn>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="8%"> 3</td>
-                                    <td width="20%">王晓磊（012502448）</td> 
-                                    <td  width="10%"><span class="green">正常</span></td>
+                                    <td width="30%">王晓磊（012502448）</td> 
+                                    <td  width="15%"><span class="green">正常</span></td>
                                     <td  width="50%">
                                         <a class="green" data-toggle="modal" href="" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                        <sapn class="c-999" data-toggle="modal" href="" >删除</sapn>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="8%"> 4</td>
-                                    <td width="20%">王晓磊（012502448）</td> 
-                                    <td  width="10%"><span class="green">正常</span></td>
+                                    <td width="30%">王晓磊（012502448）</td> 
+                                    <td  width="15%"><span class="green">正常</span></td>
                                     <td  width="50%">
                                         <a class="green" data-toggle="modal" href="" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                        <sapn class="c-999" data-toggle="modal" href="" >删除</sapn>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="8%"> 5</td>
-                                    <td width="20%">王晓磊（012502448）</td> 
-                                    <td  width="10%"><span class="green">正常</span></td>
+                                    <td width="30%">王晓磊（012502448）</td> 
+                                    <td  width="15%"><span class="green">正常</span></td>
                                     <td  width="50%">
                                         <a class="green" data-toggle="modal" href="" >停课</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                        <sapn class="c-999" data-toggle="modal" href="" >删除</sapn>
                                     </td>
                                 </tr>
                             </tbody>        
@@ -359,19 +363,8 @@
     <!-- main content end--> 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-<!--添加学员弹窗未完成-->
-<div class="modal  kjtd1" id="xtsz-addKechengModal" >
+<!--添加学员弹窗-->
+<div class="modal  kjtd1" id="tjxy-addKechengModal" >
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -381,107 +374,219 @@
             <div class="modal-body" id="modal-bodyone">                   
                     <div class="clearfix modal-info editinfo">
                         <ul class="search-allinfocon clearfix">
-                            <li class="fl"><span class="">姓名：</span>
+                            <!-- <li class="fl"><span class="">姓名：</span>
                                 <input type="text" class="form-control " />
-                            </li>
-                            <li class="fl"><span class="">年级： </span>
+                            </li> -->
+                            <li class="col-md-3"><span class="">年级： </span>
                                 <select  class="selectpicker">
-                                    <option>请选择</option>
-                                    <option>一年级</option>
-                                    <option>二年级</option>
-                                    <option>三年级</option>
-                                    <option>四年级</option>
+                                    <option>全部</option>
+                                    <option>小学一年级</option>
+                                    <option>小学二年级</option>
+                                    <option>小学三年级</option>
+                                    <option>小学四年级</option>
+                                    <option>小学五年级</option>
+                                    <option>小学六年级</option>
+                                    <option>初一年级</option>
+                                    <option>初二年级</option>
+                                    <option>初三年级</option>
+                                    <option>高一年级</option>
+                                    <option>高二年级</option>
+                                    <option>高三年级</option>
                                 </select>
                             </li>
-                            <li class=""><span class="">班主任：</span>
+                            <li class="col-md-3"><span class="">班主任：</span>
                                 <select  class="selectpicker">
                                     <option>请选择</option>
                                     <option>李老师</option>
                                     <option>王老师</option>
                                 </select>
                             </li>
-                            <li class=""><span class="">校区：</span>
+                            <li class="col-md-3"><span class="">校区：</span>
                                 <select  class="selectpicker">
                                     <option>请选择</option>
                                     <option>海淀校区</option>
                                     <option>五道口校区</option>
                                 </select>
                             </li>
+                             <li class="col-md-3">
+                                <input type="text" class="form-control col-md-5" placeholder="输入姓名" />
+                                <button  data-dismiss="" type="button" class="btn btn-success col-md-4 ml30" id="js-tjsousuo">搜索</button>
+                            </li>
+                             
                         </ul>
                     </div>
+                     <!-- 下面是没有找到时候的占位图 -->
+                    <div class="mtop10 center" >
+                        <img src="images/zhanwei.jpg">
+                    </div>
+
+                    <!-- 下面是加载数据模板 -->
                     <div class="panel-body">
                         <div class="adv-table" >
                             <table id="tjxy-table" class="display table table-bordered table-striped">
                                 <tbody class="center"> 
-                                  
                                     <tr class="m-tr row">
-                                      <td class="col-md-3">
+                                      <td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
                                             <span class="col-md-9">张 (123456789)</span>
-                                        </td>
-                                        <td class="col-md-3">
+                                        </td><td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
-                                            <span class="col-md-9">张小磊 (123456789)</span>
-                                        </td>  
-                                        <td class="col-md-3">
+                                            <span class="col-md-9">张小(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
-                                            <span class="col-md-9">张小磊 (123456789)</span>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
                                         </td>
-                                        <td class="col-md-3">
+                                        <td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
-                                            <span class="col-md-9">张小磊磊(123456789)</span>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
                                         </td>
-                                    </tr> 
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊哥哥(123456789)</span>
+                                        </td>
+                                    </tr>
                                     <tr class="m-tr row">
-                                      <td class="col-md-3">
+                                      <td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
                                             <span class="col-md-9">张 (123456789)</span>
+                                        </td><td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小(123456789)</span>
                                         </td>
-                                        <td class="col-md-3">
+                                        <td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
-                                            <span class="col-md-9">张小磊 (123456789)</span>
-                                        </td>  
-                                        <td class="col-md-3">
-                                            <div class="square-green single-row inline-block col-md-3" >
-                                                <input type="checkbox">
-                                            </div>
-                                            <span class="col-md-9">张小磊 (123456789)</span>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
                                         </td>
-                                        <td class="col-md-3">
+                                        <td class="col-md-2">
                                             <div class="square-green single-row inline-block col-md-3" >
                                                 <input type="checkbox">
                                             </div>
-                                            <span class="col-md-9">张小磊磊(123456789)</span>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊哥哥(123456789)</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="m-tr row">
+                                      <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张 (123456789)</span>
+                                        </td><td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小磊哥哥(123456789)</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="m-tr row">
+                                      <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张 (123456789)</span>
+                                        </td><td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张小(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            <div class="square-green single-row inline-block col-md-3" >
+                                                <input type="checkbox">
+                                            </div>
+                                            <span class="col-md-9">张晓磊(123456789)</span>
+                                        </td>
+                                        <td class="col-md-2">
+                                            
+                                        </td>
+                                        <td class="col-md-2"> 
                                         </td>
                                     </tr>
                                 </tbody>        
                             </table>
                         </div>
+                        <p class="red ml10 c-red center" >提示：已选择<span class=""  id="js-checkds">0</span>人!</p>
                     </div>
+                    <!-- 加载数据模板 over-->
+
                     <hr>
                     <div class="modal-btnbox">
                         <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
-                        <span class="red ml10" id="js-checkds">提示：已选择<span class="">12</span>人</span>
+                      <!--   <span class="red ml10 c-red" >提示：已选择<span class=""  id="js-checkds">0</span>人!</span> -->
                     </div>   
             </div>
         </div>
     </div>
 </div>
 
+
+
 <!--排课弹窗-->
-<div class="modal fade paike-tanchuang " id="cwgl-addBeiyongjinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade paike-tanchuang " id="pktc-addBeiyongjinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -492,19 +597,30 @@
                     <p id="js-tishi"><i class="c-999">班级名称：</i><span> 2017春季集训1班</span><i class="c-999 ">教师：</i><span> 冷清秋</span></p>
                     <div class="clearfix modal-info editinfo">
                         <ul>
-                            <li><span><i class="c-red">*</i> 上课时间：</span>
+                            <li><span><i class="c-red">*</i> 课次开始时间：</span>
                                 <input id="assessover-data16" class="laydate-icon bfb50" type="text">
                             </li>
+                            <li><span><i class="c-red">*</i> 预排课时：</span>
+                                  <select  class="selectpicker ">
+                                    <option>1</option>
+                                    <option>1.5</option>
+                                    <option>2</option>
+                                    <option>2.5</option>
+                                    <option>3</option>
+                                    <option>3.5</option>
+                                    <option>4</option>
+                                </select>课时/课次
+                            </li>
                             <li><span> <i class="c-red">*</i> 上课频率：</span>
-                                <input type="text" class="form-control bfb50 fl" />
-                            </li> 
-                            <li><span><i class="c-red">*</i> 排课次数：</span>
-                                <select  class="selectpicker ">
+                               <select  class="selectpicker ">
                                     <option>请选择</option>
-                                    <option>。。。</option>
-                                    <option>。。。。</option>
-                                    <option>。。。。。</option>
+                                    <option>每天</option>
+                                    <option>隔天</option>
+                                    <option>每周</option>
                                 </select>
+                            </li> 
+                            <li><span><i class="c-red">*</i> 预排课次：</span>
+                                <input type="text" class="form-control bfb50 fl" placeholder="请输入课次"/> 
                             </li>                                                                                             
                         </ul>
                     </div>
@@ -517,8 +633,10 @@
     </div>
 </div>
 
+
+
 <!--调课弹窗-->
-<div class="modal fade kjtd1" id="xtsz-editKechengModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade kjtd1" id="tktc-editKechengModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -531,55 +649,83 @@
                         <table id="js-table" class="display table table-bordered table-striped ">
                             <thead class="center">
                                 <tr > 
-                                    <th width="10%">序号</th>
-                                    <th width="40%">上课时间</th>
-                                    <th width="15%">教师</th>
-                                    <th width="40%">操作</th>   
+                                    <th width="10%">课次</th>
+                                    <th width="28%">课次开始时间</th>
+                                    <th width="28%">课时</th>
+                                    <th width="10%">教师</th>
+                                    <th width="24%">操作</th>   
                                 </tr>
                             </thead>
                             <tbody class="center">
-                                <tr> 
+                                 <tr> 
                                     <td width="10%">1</td>
-                                    <td width="40%">
-                                        <input id="assessover-data15" class="laydate-icon " type="text" value="2017-04-28 09:33" placeholder="选择时间" style="width:100%">
+                                    <td width="28%">
+                                        2017-04-28 09:33
                                     </td>
-                                    <td width="15%">杨克林</td>
-                                    <td  width="40%" class="js-reombtn">
-                                        <a class="green-a"  href="javascripr:;" >保存</a>
-                                        <a class="green-a"  href="" >删除</a>
+                                    <td width="28%">4.0</td>
+                                    <td width="10%">杨克林</td>
+                                    <td  width="24%" class="js-reombtn">
+                                        <a class="green-a"  href="###" >修改</a>
+                                        <a class="green-a"  href="###" >删除</a>
                                     </td>  
                                 </tr>
                                 <tr> 
-                                    <td width="15%">2</td>
-                                    <td width="35%">
+                                    <td width="10%">2</td>
+                                    <td width="28%">
                                         2017-04-28 09:33
                                     </td>
+                                    <td width="28%">4.0</td>
                                     <td width="10%">杨克林</td>
-                                    <td  width="40%" class="js-reombtn">
-                                        <a class="green-a" data-toggle="modal" href="" >修改时间</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                    <td  width="24%" class="js-reombtn">
+                                        <a class="green-a"  href="###" >修改</a>
+                                        <a class="green-a"  href="###" >删除</a>
                                     </td>  
                                 </tr>
                                 <tr> 
-                                    <td width="15%">3</td>
-                                    <td width="35%">
+                                    <td width="10%">3</td>
+                                    <td width="28%">
                                         2017-04-28 09:33
                                     </td>
+                                    <td width="28%">4.0</td>
                                     <td width="10%">杨克林</td>
-                                    <td  width="40%" class="js-reombtn">
-                                        <a class="green-a" data-toggle="modal" href="" >修改时间</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                    <td  width="24%" class="js-reombtn">
+                                        <a class="green-a"  href="###" >修改</a>
+                                        <a class="green-a"  href="###" >删除</a>
                                     </td>  
                                 </tr>
                                 <tr> 
-                                    <td width="15%">4</td>
-                                    <td width="35%">
+                                    <td width="10%">4</td>
+                                    <td width="28%">
                                         2017-04-28 09:33
                                     </td>
+                                    <td width="28%">4.0</td>
                                     <td width="10%">杨克林</td>
-                                    <td  width="40%" class="js-reombtn">
-                                        <a class="green-a" data-toggle="modal" href="" >修改时间</a>
-                                        <a class="green-a" data-toggle="modal" href="" >删除</a>
+                                    <td  width="24%" class="js-reombtn">
+                                        <a class="green-a"  href="###" >修改</a>
+                                        <a class="green-a"  href="###" >删除</a>
+                                    </td>  
+                                </tr>
+                                 <tr> 
+                                    <td width="10%">5</td>
+                                    <td width="28%">
+                                        <input id="assessover-data17" class="laydate-icon center" type="text" value="2017-04-28 09:33" placeholder="选择时间" style="width:100%">
+                                    </td>
+                                    <td width="28%">
+                                        <select  class="selectpicker ">
+                                            <option>请选择</option>
+                                            <option>1.0</option>
+                                            <option>1.5</option>
+                                            <option>2.0</option>
+                                            <option>2.5</option>
+                                            <option>3.0</option>
+                                            <option>3.5</option>
+                                            <option>4.0</option>
+                                        </select>
+                                    </td>
+                                    <td width="10%">杨克林</td>
+                                    <td  width="24%" class="js-reombtn">
+                                        <a class="green-a"  href="###" >保存</a>
+                                        <a class="green-a"  href="###" >删除</a>
                                     </td>  
                                 </tr>
                             </tbody>        
@@ -615,10 +761,6 @@
 <script src="js/datetimepicker/jquery.datetimepicker.full.js"></script>
 <!--common scripts for all pages  所有页面的 js-->
 <script src="js/scripts.js"></script>
-
-
-
-
 
 
 </body>
