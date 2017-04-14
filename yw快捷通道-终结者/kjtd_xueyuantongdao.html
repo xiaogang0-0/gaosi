@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,14 +30,6 @@
   <script src="js/respond.min.js"></script>
   <![endif]-->
 
-
-
-
-
-
-
-
-
     
 </head>
 
@@ -49,7 +42,6 @@
         <div class="logo">
             <a href="index.html"><img  src="images/logo.png" alt=""></a>
         </div>
-
         <div class="logo-icon text-center">
             <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
         </div>
@@ -191,17 +183,8 @@
         <div class="wrapper">
             <section class="panel bjgl-list  bjgl-list1">
                   <header class="panel-heading clearfix"> 
-                                        
-                    <div class="bossss ">
-                        <button class="btn btn-warning " type="button" data-toggle="modal" href="#xytd-daoruModal">
-                            <i class="fa fa-upload"></i> 导入学员
-                        </button> 
-                        <!-- <button class="btn btn-warning " type="button">  
-                            <i class="fa fa-upload"></i> 导入学员 
-                        </button>  -->        
-                        <a href="###">下载导入模板</a>
-                    </div>
                     <button class="btn btn-success " type="button" data-toggle="modal" href="" id="js-addxueyuan"><i class="fa fa-plus "></i> 添加学员 </button>
+                    <button class="btn btn-warning " type="button" data-toggle="modal" href="#xytd-daoruModal"><i class="fa fa-upload"></i> 导入学员</button>
                   </header>
                 
                   <div class="search-info"> 
@@ -213,21 +196,19 @@
                                 <li >姓名</li>
                                 <li>班主任</li>
                             </ul>
-                            <button class="btn sb-btn btn-success btn-lg " type="button">搜索</button>
+                            <!-- <button class="btn sb-btn btn-success btn-lg " type="button">搜索</button> -->
+                            <button class="btn sb-btn btn-success" type="button">搜索</button>
                         </div>
                   </div>  
                  
-                 <div class="panel-body">
+                 <div class="panel-body panel-llist">
                     <ul class="list-cons center">
                         <li>王晓雷<span>（056215465）</span></li>
                         <li>王晓雷<span>（056215465）</span></li>
+                      <!--   <li>王晓雷<span>（056215465）</span></li>
                         <li>王晓雷<span>（056215465）</span></li>
                         <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
-                        <li>王晓雷<span>（056215465）</span></li>
+                        <li>王晓雷<span>（056215465）</span></li> -->
                     </ul>
                  </div>
 
@@ -246,7 +227,7 @@
                    <div class="panel-body ">
                        <ul class="clearfix lh30 ">
                            <li class="col-lg-4"><i class="c-999">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;：</i>王小雷</li>
-                           <li class="col-lg-4"><i class="c-999">生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日&nbsp;：</i>2000-01-01</li>
+                           <li class="col-lg-4"><i class="c-999">生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日&nbsp;：</i>2002-01-01</li>
                            <li class="col-lg-4"><i class="c-999">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话&nbsp;：</i>13888888888</li>
                            <li class="col-lg-4"><i class="c-999">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;：</i>男</li>
                            <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>一年级</li>
@@ -267,7 +248,7 @@
                                 <input type="text" placeholder="请输入" class="form-control"  />
                            </li>
                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>生&nbsp;&nbsp;&nbsp;&nbsp;日&nbsp;：</i>
-                                <input id="assessover-data1" class="laydate-icon" type="text" value="" placeholder="选择日期">
+                                <input id="assessover-data1" class="laydate-icon" type="text"  placeholder="选择日期" value="2002-01-01">
                            </li>
                            <li class="col-lg-4"><i class="c-999"><span class="red">*</span>电&nbsp;&nbsp;&nbsp;&nbsp;话&nbsp;：</i>
                                     <input type="text" placeholder="请输入" class="form-control"  />
@@ -281,11 +262,19 @@
                            </li>
                            <li class="col-lg-4"><i class="c-999">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级&nbsp;：</i>
                                 <select  class="selectpicker">
-                                    <option>一年级</option>
-                                    <option>二年级</option>
-                                    <option>三年级</option>
-                                    <option>四年级</option>
-                                    <option>五年级</option>
+                                    <option>全部</option>
+                                    <option>小学一年级</option>
+                                    <option>小学二年级</option>
+                                    <option>小学三年级</option>
+                                    <option>小学四年级</option>
+                                    <option>小学五年级</option>
+                                    <option>小学六年级</option>
+                                    <option>初一年级</option>
+                                    <option>初二年级</option>
+                                    <option>初三年级</option>
+                                    <option>高一年级</option>
+                                    <option>高二年级</option>
+                                    <option>高三年级</option>
                                 </select>
                            </li>
                            <li class="col-lg-4"><i class="c-999">班&nbsp;&nbsp;主&nbsp;&nbsp;任：</i>
@@ -298,9 +287,8 @@
                            </li>
                            <li class="col-lg-4"><i class="c-999">校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区&nbsp;：</i>
                                <select  class="selectpicker">
-                                    <option>五道口</option>
-                                    <option>海淀</option>
-                                    <option>西城</option>
+                                    <option>黄庄校区</option>
+                                    <option>五道口校区</option>
                                 </select>
                             </li>
                        </ul>
@@ -308,7 +296,7 @@
             </section>
     
             <section class="panel bjgl-info">
-                <div class="panel-body">    
+                <div class="panel-body panel-rlist">    
                     <header class="panel-heading  auto">
                         <button class="btn btn-success" type="button"  href="#jwjx-ydypaikeModal" data-toggle="modal" id="js-add">
                             <i class="fa fa-plus"></i> 添加课程
@@ -320,7 +308,6 @@
                     <table  class=" table table-bordered table-striped caozuo">
                         <thead>
                             <tr>
-                                <th width="8%" >序号</th>
                                 <th width="15%">科目</th>
                                 <th width="15%" >班级名称</th>
                                 <th width="13%">教师</th>
@@ -331,9 +318,8 @@
                         </thead>
                         <tbody class="center" id="js-table">
                             <tr>
-                                <td width="8%"> 1</td>
                                 <td width="15%">小学语文</td>                                        
-                                <td width="15%">2016秋季培训</td>                                     
+                                <td width="15%">/</td>                                     
                                 <td width="10%">李雷</td>                                      
                                 <td  width="10%">一对一</td>
                                 <td  width="10%"><span class="red">停课</span></td>
@@ -344,9 +330,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="8%"> 2</td>
                                 <td width="15%">小学语文</td>                                        
-                                <td width="15%">/</td>                                     
+                                <td width="15%">2016秋季培训</td>                                     
                                 <td width="10%">李雷</td>                                      
                                 <td  width="10%">班组课</td>
                                 <td  width="10%"><span class="green">正常</span></td>
@@ -357,9 +342,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="8%"> 3</td>
                                 <td width="15%">小学语文</td>                                        
-                                <td width="15%">2016秋季培训</td>                                     
+                                <td width="15%">/</td>                                     
                                 <td width="10%">李雷</td>                                      
                                 <td  width="10%">一对一</td>
                                 <td  width="10%"><span class="red">停课</span></td>
@@ -370,9 +354,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="8%"> 4</td>
                                 <td width="15%">小学语文</td>                                        
-                                <td width="15%">/</td>                                     
+                                <td width="15%">2016秋季培训</td>                                     
                                 <td width="10%">李雷</td>                                      
                                 <td  width="10%">班组课</td>
                                 <td  width="10%"><span class="green">正常</span></td>
@@ -382,21 +365,9 @@
                                     <span class="c-999" data-toggle="modal" href="" >删除</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td width="8%"> 5</td>
-                                <td width="15%">小学语文</td>                                        
-                                <td width="15%">2016秋季培训</td>                                     
-                                <td width="10%">李雷</td>                                      
-                                <td  width="10%">一对一</td>
-                                <td  width="10%"><span class="red">停课</span></td>
-                                <td  width="40%">
-                                    <a class="green-a" data-toggle="modal" href="" >复课</a>
-                                    <a class="green-a" data-toggle="modal" href="" >更换教师</a>
-                                    <a class="green-a" data-toggle="modal" href="" >删除</a>
-                                </td>
-                            </tr>
+                            
                             <!-- <tr>
-                                <td width="8%"> 6</td>
+                                <td width="8%"> 5</td>
                                 <td width="15%">
                                     <select class="selectpicker">
                                         <option>小学语文</option>
@@ -425,10 +396,9 @@
                     </table>
                 </div>
                  <ul class="pagination mr10 fr">
-                    <li><a href="javascript:;" class=" fa fa-caret-left"></a></li>
-                    <li><a href="javascript:;">1</a></li>
-                    <li class="active"><a href="javascripr:;">2</a></li>
-                    <li><a href="javascript:;" class="fa fa-caret-right"></a></li>
+                    <li><a href="###" class=" fa fa-caret-left"></a></li>
+                    <li class="active"><a href="###">1</a></li>
+                    <li><a href="###" class="fa fa-caret-right"></a></li>
                  </ul>
             </section>    
         </div>
@@ -458,9 +428,6 @@
 </div>
 
 
-
-
-
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -478,12 +445,6 @@
 <script type="text/javascript" src="js/fileinput/fileinput.js"></script>
 <!--common scripts for all pages  所有页面的 js-->
 <script src="js/scripts.js"></script>
-
-
-
-
-
-
 
 
 </body>

@@ -309,13 +309,13 @@
             format:'Y-m-d H:i',
             step:10
           });
-        $('.laydate-icon').datetimepicker({
-            datepicker:true,
-            minHours:6,
-            maxHours:23,
-            format:'Y-m-d H:i',
-            step:10
-          });
+        // $('.laydate-icon').datetimepicker({
+        //     datepicker:true,
+        //     minHours:6,
+        //     maxHours:23,
+        //     format:'Y-m-d H:i',
+        //     step:10
+        //   });
 
 
 	}();
@@ -586,15 +586,15 @@
                             break;
                         case '复课' :
                             $(target).html('停课');
-                            $elem.eq(2).html('<span class="green">正常</span>');
-                             $elem.eq(3).children().eq(1).remove();
-                             $elem.eq(3).append('<sapn class="c-999" data-toggle="modal" href="" >删除</sapn>');
+                            $elem.eq(1).html('<span class="green">正常</span>');
+                             $elem.eq(2).children().eq(1).remove();
+                             $elem.eq(2).append('<sapn class="c-999" data-toggle="modal" href="###" >删除</sapn>');
                             break;
                         case '停课' :
                             $(target).html('复课');
-                            $elem.eq(2).html('<span class="red">停课</span>')
-                            $elem.eq(3).children().eq(1).remove();
-                             $elem.eq(3).append('<a class="green" data-toggle="modal" href="" >删除</a>');
+                            $elem.eq(1).html('<span class="red">停课</span>')
+                            $elem.eq(2).children().eq(1).remove();
+                             $elem.eq(2).append('<a class="green" data-toggle="modal" href="###" >删除</a>');
                             break;
                     }
                 }       
@@ -616,26 +616,25 @@
                 switch(target.innerHTML){
                     case '保存' :
                         val =$elem.eq(1).find('input').val();
-                        overVal =$elem.eq(2).find('input').val();
+                        overVal =$elem.eq(2).find('button').attr('title');
+                       
                         $elem.eq(1).html(val);
                         $elem.eq(2).html(overVal);
-                        $(target).html('修改时间');
-                        console.log(val,overVal)
-                        // keshi =transdate(overVal)-transdate(val);
-                        // alert('课时'+keshi+'钟');
-                        
+                        $(target).html('修改');
                         break;
                     case '删除' :
                         $(ev.target).parents('tr').remove();
                         //ajax请求
                         break;
-                    case '修改时间' :
+                    case '修改' :
                         $(target).html('保存');
                         val = $elem.eq(1).html().trim();
                         overVal = $elem.eq(2).html().trim();
+                        
                         $elem.eq(1).html('<input class="laydate-icon assessover-data17 center" type="text" value="'+val+'" placeholder="选择时间" style="width:100%">')
-                         $elem.eq(2).html('<input class="laydate-icon assessover-data17 center" type="text" value="'+val+'" placeholder="选择时间" style="width:100%">')
+                         $elem.eq(2).html('<select  class="selectpicker" title="'+overVal+'"><option>请选择</option><option>1</option><option>1.5</option><option>2</option><option>2.5</option><option>3</option><option>3.5</option><option>4</option></select>')
                         datetimepickerRes('.assessover-data17') //这个加载出来  还得调方法
+                         $('.selectpicker').selectpicker();// 插入后重载样式 否则样式丢失
 
                         break;
         
@@ -653,17 +652,6 @@
                       step:10
                     });
         }
-        //转换时间戳
-      //   function transdate(endTime){ 
-      //       var date=new Date(); 
-      //       date.setFullYear(endTime.substring(0,4)); 
-      //       date.setMonth(endTime.substring(5,7)-1); 
-      //       date.setDate(endTime.substring(8,10)); 
-      //       date.setHours(endTime.substring(11,13)); 
-      //       date.setMinutes(endTime.substring(14,16)); 
-      //       // date.setSeconds(endTime.substring(17,19)); 
-      //       return Date.parse(date)/1000; 
-      // } 
 
     };
 
@@ -675,9 +663,8 @@
             var $baocun = $(".kjtd-x #js-baocun");
             var $add = $(".kjtd-x #js-add");
             var $table = $(".kjtd-x #js-table");
-             var $addxueyuan = $(".kjtd-x #js-addxueyuan");
-            var length = $(".kjtd-x #js-table tr").length;
-               
+            var $addxueyuan = $(".kjtd-x #js-addxueyuan");
+            
 
            $addxueyuan.click(function(){ 
                $baocun.hide();
@@ -693,10 +680,9 @@
                $bianji.hide()
             })
 
+           
             $add.click(function(){
-                length+=1;
-                $table.append('<tr><td width="8%">'+length+'</td><td width="15%"><select class="selectpicker"><option>小学语文</option><option>小学数学</option><option>小学英语</option><option>小学物理</option></select></td><td width="15%">2016秋季培训</td><td width="13%"><select class="selectpicker"><option>李老师</option><option>张老师</option></select> </td> <td  width="10%">一对一</td><td  width="10%"><span class="green">正常</span></td><td  width="40%">                                        <a class="green-a inline-block" data-toggle="modal" href="" >停课</a><a class="green-a" data-toggle="modal" href="" >保存</a><a class="green" data-toggle="modal" href="" >删除</a></td></tr>');
-
+                $table.prepend('<tr><td width="15%"><select class="selectpicker"><option>小学语文</option><option>小学数学</option><option>小学英语</option><option>小学物理</option></select></td><td width="15%">/</td><td width="13%"><select class="selectpicker"><option>李老师</option><option>张老师</option></select> </td> <td  width="10%">一对一</td><td  width="10%"><span class="green">正常</span></td><td  width="40%">                                        <a class="green-a inline-block" data-toggle="modal" href="" >停课</a><a class="green-a" data-toggle="modal" href="" >保存</a><a class="green" data-toggle="modal" href="" >删除</a></td></tr>');
                 $('.selectpicker').selectpicker();// 插入后重载样式 否则样式丢失
             })
 
@@ -711,38 +697,33 @@
 
                     switch(target.innerHTML){
                         case '保存' :
-
-                            val =$elem.eq(1).find('select').val();
-                            $elem.eq(1).html(val);
-                            $elem.eq(3).html($elem.eq(3).find('select').val());
+                            val =$elem.eq(0).find('select').val();
+                            $elem.eq(0).html(val);
+                            $elem.eq(2).html($elem.eq(2).find('select').val());
                             $(target).html('更换教师');
-
                             break;
                         case '删除' :
-
                             $(ev.target).parents('tr').remove();
                             //ajax请求
                             break;
                         case '更换教师' :
                             $(target).html('保存');
-                            val = $elem.eq(3).html();
-                            $elem.eq(3).html('<select class="selectpicker"><option>'+val+'</option><option>张老师</option></select>');
-
+                            val = $elem.eq(2).html();
+                            $elem.eq(2).html('<select class="selectpicker"><option>'+val+'</option><option>张老师</option></select>');
                             $('.selectpicker').selectpicker();// 插入后重载样式否则样式丢失
-                            
                             break;
 
                         case '复课' :
                             $(target).html('停课');
-                            $elem.eq(5).html('<span class="green">正常</span>')
-                             $elem.eq(6).children().eq(2).remove();
-                             $elem.eq(6).append('<sapn class="c-999" data-toggle="modal" href="" >删除</sapn>');
+                            $elem.eq(4).html('<span class="green">正常</span>')
+                             $elem.eq(5).children().eq(2).remove();
+                             $elem.eq(5).append('<sapn class="c-999" data-toggle="modal" href="" >删除</sapn>');
                             break;
                         case '停课' :
                             $(target).html('复课');
-                            $elem.eq(5).html('<span class="red">停课</span>');
-                            $elem.eq(6).children().eq(2).remove();
-                             $elem.eq(6).append('<a class="green" data-toggle="modal" href="" >删除</a>');
+                            $elem.eq(4).html('<span class="red">停课</span>');
+                            $elem.eq(5).children().eq(2).remove();
+                             $elem.eq(5).append('<a class="green" data-toggle="modal" href="" >删除</a>');
 
                             break;
                     }
