@@ -1,0 +1,11 @@
+账户管理 ： 
+   css：		kjtd-zhgl.css 
+    js: 	无
+images: 	公用 images
+
+
+快捷通道： 
+   css：         kjtd-zhgl.css 
+images:         公用 images
+    js:         kuaijietongdao.js	
+		并且修改更新 公用样式库js/datetimepicker的文件

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="images/logo_icon_1616.png" type="image/png">
+
+  <title>爱提分官方网站</title>
+
+  <!--btSelect-->
+  <link href="js/btSelect/bootstrap-select.min.css" rel="stylesheet">
+
+  <!--icheck-->
+  <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
+
+  <!--common-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="home.html"><img  src="images/logo.png" alt=""></a>
+        </div>
+        <div class="logo-icon text-center">
+            <a href="home.html"><img src="images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+        <div class="left-side-inner">
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li  class="active"><a href=""><i class="fa fa-home"></i> <span>首页</span></a></li>
+                <li class="menu-list">
+                	<a href=""><i class="fa fa-laptop"></i> <span>前台业务</span></a>
+                	<ul class="sub-menu-list" style="">
+                        <li><a href="qtyw_ziyuanzhongxin.html">资源中心</a></li>
+                        <li><a href="qtyw_shoucibaoming.html">首次报名</a></li>
+                        <li><a href="qtyw_fenpeibanzhuren.html">分配更换班主任</a></li>
+                        <li><a href="qtyw_huifangjilu.html">回访记录</a></li>
+                        <li><a href="qtyw_tianjiabanji.html">添加班级</a></li>
+                        <li><a href="qtyw_banlituikuan.html">办理退款</a></li>
+                        <li><a href="qtyw_zhuanyikeshi.html">转移课时</a></li>
+                        <li><a href="qtyw_xueyuanjifei.html">学员缴费</a></li>
+                        <li><a href="qtyw_fapiaoguanli.html">发票管理</a></li>
+                        <li><a href="qtyw_jinchumingxi.html">进出明细</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                	<a href=""><i class="fa fa-magic"></i> <span>教务教学</span></a>
+                	<ul class="sub-menu-list" style="">
+                        <li><a href="jwjx_xueyuanzhongxin.html">学员中心</a></li>
+                        <li><a href="jwjx_banjiguanli.html">班级管理</a></li>
+                        <li><a href="jwjx_banjikebiao.html">班级课表</a></li>
+                        <li><a href="jwjx_jiaoshishiduan.html">教师时段</a></li>
+                        <li><a href="jwjx_fenpeijiaoshi.html">分配更换教师</a></li>
+                        <li><a href="jwjx_kehaoribaobiao.html">课耗日报表</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                	<a href=""><i class="fa fa-user"></i> <span>人员管理</span></a>
+                	<ul class="sub-menu-list" style="">
+                        <li><a href="rygl_jiaoshiguanli.html">教师管理</a></li>
+                        <li><a href="rygl_xiaoqurenyuanguanli.html">校区人员管理</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                	<a href=""><i class="fa fa-money"></i> <span>财务管理</span></a>
+                	<ul class="sub-menu-list" style="">
+                        <li><a href="cwgl_jituifeishenhe.html">缴退费审核</a></li>
+                        <li><a href="cwgl_caiwurishendan.html">财务日审单</a></li>
+                        <li><a href="cwgl_beiyongjinguanli.html">备用金管理</a></li>
+                        <li><a href="cwgl_zhangmuyuetongji">账目月统计</a></li>
+                        <li><a href="cwgl_mingxichaxun.html">明细查询</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                	<a href=""><i class="fa fa-gears"></i> <span>系统设置</span></a>
+                	<ul class="sub-menu-list" style="">
+                        <li><a href="xtsz_zuzhijiagou.html">组织架构</a></li>
+                        <li><a href="xtsz_gangweiguanli.html">岗位管理</a></li>
+                        <li><a href="xtsz_ziyuanqudao.html">资源渠道</a></li>
+                        <li><a href="xtsz_huiyuandengjiguize.html">会员等级规则</a></li>
+                        <li><a href="xtsz_jigoujiaoshidengji.html">机构教师等级</a></li>
+                        <li><a href="xtsz_kemuguanli.html">科目管理</a></li>
+                        <li><a href="xtsz_kechengshezhi.html">课程设置</a></li>
+                        <li><a href="xtsz_youhuihuodongguanli.html">优惠活动管理</a></li>
+                        <li><a href="xtsz_qitashezhi.html">其他设置</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                	<a href=""><i class="fa fa-random"></i> <span>批量管理</span></a>
+                	<ul class="sub-menu-list" style="">
+                        <li><a href="plgl_ziyuanguanli.html">资源管理</a></li>
+                        <li><a href="plgl_xueyuanguanli.html">学员管理</a></li>
+                        <li><a href="plgl_kehaoguanli.html">课耗管理</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-bell"></i> <span>消息中心</span></a>
+                    <ul class="sub-menu-list" style="">
+                        <li><a href="xxzx_yewutixing.html">业务提醒</a></li>
+                        <li><a href="xxzx_beiwanglu.html">工作备忘</a></li>
+                        <li><a href="xxzx_xitongxiaoxi.html">公告</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-bar-chart-o"></i> <span>数据统计</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="sjtj_shichang.html">市场</a></li>
+                        <li><a href="sjtj_ziyuan.html">资源</a></li>
+                        <li><a href="sjtj_xueyuan.html">学员</a></li>
+                        <li><a href="sjtj_kehao.html">课耗</a></li>
+                        <li><a href="sjtj_jiaoshi.html">教师</a></li>
+                        <li><a href="sjtj_caiwu.html">财务</a></li>
+                        <!--
+                          <li><a href="sjtj_shujutongji-echarts.html">数据报告</a></li>
+                          <li><a href="sjtj_shujutongji-teacher.html">教师业绩</a></li>
+                        -->
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href="javascript:;"><i class="fa fa-bell"></i> <span>账户管理</span></a>
+                    <ul class="sub-menu-list">
+                        <li class=""><a href="zhgl_zhanghuguanli.html">账户管理</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list ">
+                    <a href=""><i class="fa fa-bolt"></i> <span>快捷通道</span></a>
+                    <ul class="sub-menu-list">
+                        <li class=""><a href="kjtd_xueyuantongdao.html">学员通道</a></li>
+                        <li class=""><a href="kjtd_banjitongdao.html">班级通道</a></li>        
+                    </ul>
+                </li>
+                <li><a href="zxpx_jinqipeixun.html"><i class="fa  fa-youtube-play"></i> <span>在线培训</span></a></li>
+                <li><a href="building.html"><i class="fa fa-wrench"></i> <span>建设中...</span></a></li>
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+            <!--toggle button start-->
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <div  class="menu-left">
+              <ul class="notification-menu">
+              <li class="hello">张新乐，早上好！</li>
+              </ul>
+            </div>
+            <!--toggle button end-->
+
+            <!--notification menu start -->
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <!-- <img src="images/photos/user-avatar.png" alt="" /> -->
+                            我的
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="#nav-changePswModal" data-toggle="modal"><i class="fa fa-lock"></i>修改密码</a></li>
+                            <li><a href="#"><i class="fa fa-eye-slash"></i>查看权限</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i>安全退出</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+
+        <!-- page heading end-->
+        <div class="wrapper ">
+
+          <!--公告、提醒、便签内容-->
+          <div class="row index-info">
+                <div class="col-lg-4">
+                    <section class="panel">
+                        <header class="panel-heading"><span class="fl  "><i class="fa fa-volume-up f16"></i> 公告 </span>
+                        <button class="btn btn-success  btn-xs fr" type="button" data-toggle="modal" href="#addgonggaoModal">
+                          <i class="fa fa-plus "></i>
+                          添加
+                          </button>
+                        </header>
+                        <div class="panel-body">
+                          <ul class="gongao">
+                            <li>
+                              <a href="">
+                                <i class="fa fa-envelope-o  f16"></i>
+                                春季放假安排。
+                              </a>
+                              <span>2016-11-03</span>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i class="fa fa-envelope-o  f16"></i>
+                                系统新功能，增加了提醒功能提醒功能。
+                              </a>
+                              <span>2016-11-03</span>
+                            </li>
+                            <li>
+                              <a class="open" href="">
+                                <i class="fa fa-envelope-open-o c-ccc  f16"></i>
+                                热列欢迎小四儿、王紫玉加入我们。
+                              </a>
+                              <span>2016-11-03</span>
+                            </li>
+                            <li>
+                              <a  href="">
+                                <i class="fa fa-envelope-o  f16"></i>
+                                系统新功能，增加了提醒功能提醒功能.。
+                              </a>
+                              <span>2016-11-03</span>
+                            </li>
+                            <li>
+                              <a class="open" href="">
+                                <i class="fa fa-envelope-open-o  c-ccc f16"></i>
+                                恭喜王加尔晋升嘟嘟校区校长。
+                              </a>
+                              <span>2016-11-03</span>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="panel">
+                        <header class="panel-heading"><i class="fa fa-bullhorn f16"></i> 业务提醒</header>
+                        <div class="panel-body">
+                          <ul class="tixing">
+                            <li>
+                              <a class="open" href="">
+                                <i class="fa fa-bell-slash-o c-ccc f16"></i>
+                                学员XXX退费2600元，剩余金额xx元。
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i class="fa fa-bell-o  f16"></i>
+                                学员XXX退费2600元，剩余金额xx元。
+                              </a>
+                            </li>
+                            <li>
+                              <a class="open" href="">
+                                <i class="fa fa-bell-slash-o c-ccc f16"></i>
+                                学员XXX退费2600元，剩余金额xx元。
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i class="fa fa-bell-o  f16"></i>
+                                学员XXX退费2600元，剩余金额xx元。
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="panel">
+                        <header class="panel-heading">
+                        <span class="fl"><i class="fa fa-file-text-o f16"></i> 我的便签</span>
+                        <div class="bq-on c-ccc" id="J_bianqianlookover">
+                          <i class="fa fa-toggle-on f16 v-middle" aria-hidden="true"></i>
+                          <span class="v-middle">查看已完成</span>
+                        </div>
+                        <button class="btn btn-success  btn-xs fr" type="button" data-toggle="modal" href="#addbianqianModal">
+                          <i class="fa fa-plus "></i>
+                          添加
+                          </button>
+                        </header>
+                        <div class="panel-body">
+                          <div class="bianqian J_bianqian" id="J_bianqianlookovercon">
+                            <ul class="">
+                              <li>
+                                  <p>
+                                    <i class="fa fa-external-link c-green pointer " title="移到已完成任务"></i>
+                                    <i class="fa fa-window-close c-orange pointer " title="删除任务"></i>
+                                    <i class="c-999" title="2016-11-23">11-23</i>
+                                    春季放假安春季放假安春季放假安。
+                                  </p>
+                              </li>
+                              <li>
+                                  <p>
+                                    <i class="fa fa-external-link c-green pointer " title="移到已完成任务"></i>
+                                    <i class="fa fa-window-close c-orange pointer " title="删除任务"></i>
+                                    <i class="c-999" title="2016-11-24">11-24</i>
+                                    春季放假安春春季放假安春季季放假安春季放假安。
+                                  </p>
+                              </li>
+                              <li>
+                                  <p>
+                                    <i class="fa fa-external-link c-green pointer " title="移到已完成任务"></i>
+                                    <i class="fa fa-window-close c-orange pointer " title="删除任务"></i>
+                                    <i class="c-999" title="2016-11-25">11-25</i>
+                                    春季放假安春季放假安春季放假安。
+                                  </p>
+                              </li>
+                            </ul>
+                            <ul class="hide bqover">
+                              <li>
+                                  <p>
+                                    <samp class="c-green">[已完成]</samp>
+                                    <i class="fa fa-external-link c-orange pointer " title="移到未完成任务"></i>
+                                    <i class="fa fa-window-close c-orange pointer " title="删除任务"></i>
+                                    <i class="c-999" title="2016-11-23">11-23</i>
+                                    春季放假安春季放假安春季放假安。
+                                  </p>
+                              </li>
+                              <li>
+                                  <p>
+                                    <samp class="c-green">[已完成]</samp>
+                                    <i class="fa fa-external-link c-orange pointer " title="移到未完成任务"></i>
+                                    <i class="fa fa-window-close c-orange pointer " title="删除任务"></i>
+                                    <i class="c-999" title="2016-11-24">11-24</i>
+                                    春季放假安春春季放假安春季季放假安春季放假安。
+                                  </p>
+                              </li>
+                              <li>
+                                  <p>
+                                    <samp class="c-green">[已完成]</samp>
+                                    <i class="fa fa-external-link c-orange pointer " title="移到未完成任务"></i>
+                                    <i class="fa fa-window-close c-orange pointer " title="删除任务"></i>
+                                    <i class="c-999" title="2016-11-25">11-25</i>
+                                    春季放假安春季放假安春季放假安。
+                                  </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+          </div>
+          <!--全部首页显示内容-->
+          <section class="panel index-tongji clearfix  hide">
+             <ul>
+               <li>
+                  <a href="" class="bg-line-red"><i class="fa fa-credit-card "></i>费用预警学员<span>12</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-pink"><i class="fa fa-stack-overflow"></i>课时预警学员<span>6</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-violet"><i class="fa fa-fax "></i>待回访资源<span>123</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-green2"><i class="fa fa-whatsapp "></i>待回访学员<span>58</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-orange"><i class="fa fa-birthday-cake"></i>生日学员<span>79</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue2"><i class="fa fa-microphone "></i>今日首次课<span>34</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-lavender"><i class="fa fa-gift"></i>本月员工生日<span>3</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-brown"><i class="fa fa-grav"></i>本月入职满年<span>12</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-orange2"><i class="fa fa-check-square-o"></i>财务日待审<span>45</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-green"><i class="fa fa-newspaper-o"></i>今日业务明细<span>16</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue"><i class="fa fa-calendar "></i>教师课表</a>
+               </li>
+             </ul>
+          </section>
+          <!--校长首页显示内容-->
+          <section class="panel index-tongji clearfix  ">
+             <ul>
+               <li>
+                  <a href="" class="bg-line-red"><i class="fa fa-credit-card "></i>费用预警学员<span>12</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-pink"><i class="fa fa-stack-overflow"></i>课时预警学员<span>6</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-violet"><i class="fa fa-fax "></i>待回访资源<span>123</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-green2"><i class="fa fa-whatsapp "></i>待回访学员<span>58</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-orange"><i class="fa fa-birthday-cake"></i>生日学员<span>79</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue2"><i class="fa fa-microphone "></i>今日首次课<span>34</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue"><i class="fa fa-calendar "></i>教师课表</a>
+               </li>
+             </ul>
+          </section>
+          <!--班主任首页显示内容-->
+          <section class="panel index-tongji clearfix hide" >
+             <ul>
+               <li>
+                  <a href="" class="bg-line-red"><i class="fa fa-credit-card "></i>费用预警学员<span>12</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-pink"><i class="fa fa-stack-overflow"></i>课时预警学员<span>6</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-green2"><i class="fa fa-whatsapp "></i>待回访学员<span>58</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-orange"><i class="fa fa-birthday-cake"></i>生日学员<span>79</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue2"><i class="fa fa-microphone "></i>今日首次课<span>34</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue"><i class="fa fa-calendar "></i>教师课表</a>
+               </li>
+             </ul>
+          </section>
+          <!--咨询师首页显示内容-->
+          <section class="panel index-tongji clearfix hide">
+             <ul>
+               <li>
+                <a href="" class="bg-line-violet"><i class="fa fa-fax "></i>待回访资源<span>123</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-orange"><i class="fa fa-birthday-cake"></i>生日学员<span>79</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue2"><i class="fa fa-microphone "></i>今日首次课<span>34</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-blue"><i class="fa fa-calendar "></i>教师课表</a>
+               </li>
+             </ul>
+          </section>
+          <!--人事首页显示内容-->
+          <section class="panel index-tongji clearfix hide">
+             <ul>
+               <li>
+                <a href="" class="bg-line-lavender"><i class="fa fa-gift"></i>本月员工生日<span>3</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-brown"><i class="fa fa-grav"></i>本月入职满年<span>12</span></a>
+               </li>
+             </ul>
+          </section>
+          <!--财务首页显示内容-->
+          <section class="panel index-tongji clearfix hide">
+             <ul>
+               <li>
+                <a href="" class="bg-line-orange2"><i class="fa fa-check-square-o"></i>财务日待审<span>45</span></a>
+               </li>
+               <li>
+                <a href="" class="bg-line-green"><i class="fa fa-newspaper-o"></i>今日业务明细<span>16</span></a>
+               </li>
+             </ul>
+          </section>
+
+          <!--数据统计内容-->
+          <div class="clearfix">
+                <div class="state-info">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <span>选择校区：</span>
+                            <select  class="selectpicker bfb75" multiple data-hide-disabled="true" >
+                                <option value="1">海淀校区</option>
+                                <option value="2">黄庄校区</option>
+                                <option value="3">望京校区</option>
+                                <option value="4">西城校区</option>
+                                <option value="5">东城校区</option>
+                                <option value="6">初中英语</option>
+                                <option value="7" selected="">丰台校区</option>
+                                <option value="8" >公主坟校区</option>
+                                <option value="15">苹果园校区</option>
+                            </select>
+                            <button class="btn btn-success" type="button">今日</button>
+                            <button class="btn btn-default" type="button">近一周</button>
+                            <button class="btn btn-default" type="button">近一月</button>
+                        </header>
+                        <div class="panel-body ">
+                            <div class="box-o-border box-bg-green">
+                                <span >现金流</span><h3 >¥45,600</h3>
+                            </div>
+                            <div class="box-o-border box-bg-orange" style="width:19%">
+                                <span>课耗总额（300课时）</span><h3 >¥45,600</h3>
+                            </div>
+                            <div class="box-o-border box-bg-blue">
+                                <span>新增学员数</span><h3 >200人</h3>
+                            </div>
+                            <div class="box-o-border box-bg-violet">
+                                <span>新增资源数</span><h3 >520人</h3>
+                            </div>
+                            <div class="box-o-border box-bg-green2" style="width:25%">
+                              <span>课程完成数（出报告）6月1日-6月7日</span>
+                                <!-- <i class="fa fa fa-question-circle" title="课程完成率，指教师完成备课、上课和课节核录的课程，由于课节核录需要三天的延迟，所以统计日从三天前开始向前推七天。"></i> -->
+                              <h3>155（30%）</h3>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <span class="c-green f20"><b>现金流 </b></span>
+                            <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-up"></a>
+                            </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="chart">
+                                <div id="chart_xianjinliu"  class="minh400"></div>
+                            </div>
+                            <hr>
+                            <div>
+                                <b>
+                                    总计   签单数：<span ><i class="f22">35</i>单</span>，
+                                    签约金额：<span >¥<i class="f22">365403</i>.00</span>，
+                                    签约实到金额：<span class="c-green">¥<i class="f22">365403</i>.00</span>，
+                                    退费金额：<span>¥<i class="f22">365</i>.00</span>
+                                </b>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <span class="c-green f20"><b>课耗</b> <a class="fw-normal f14" href="plgl_kehaoguanli.html">查看详情 ></a></span>
+                          <span class="tools pull-right">
+                              <a href="javascript:;" class="fa fa-chevron-up"></a>
+                          </span>
+                        </header>
+                        <div class="panel-body">
+
+                            <div class="chart">
+                                <div id="chart_kehao" class="minh400"></div>
+                            </div>
+                            <hr>
+                            <div>
+                                <b>
+                                    总计   课耗金额：<span>¥<i class="f22">36500</i>.00</span>，
+                                    实际耗课金额：<span class="c-green ">¥<i class="f22">26500</i>.00</span>，
+                                    课耗优惠券金额：<span >¥<i class="f22">5400</i>.00</span>
+                                </b>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <span class="c-green f20"><b>学员</b> <a class="fw-normal f14" href="plgl_xueyuanguanli.html">查看详情 ></a></span>
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-up"></a>
+
+                         </span>
+                        </header>
+                        <div class="panel-body">
+
+                            <div class="chart">
+                                <div id="chart_student"  class="minh400"></div>
+                            </div>
+                            <hr>
+                            <div>
+                                <b>
+                                    总计   新增学员数<i class="f22 c-green">1200</i>人，
+                                    报名班级数：<i class="f22">2600</i>个，
+                                    结课学员数：<i class="f22">890</i>人，
+                                </b>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            <span class="c-green f20"><b>资源</b> <a class="fw-normal f14" href="plgl_ziyuanguanli.html">查看详情 ></a></span>
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-up"></a>
+                         </span>
+                        </header>
+                        <div class="panel-body">
+
+                            <div class="chart">
+                                <div id="chart_ziyuan" class="minh400"></div>
+                            </div>
+                            <hr>
+                            <div>
+                                <b>
+                                    总计   新增资源数<i class="f22 c-green">1200</i>人，
+                                    当前资源总计：<i class="f22">2600</i>人，
+                                    有效资源总计：<i class="f22">890</i>人，
+                                    无效资源总计<i class="f22">590</i>人
+                                </b>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <!-- main content end-->
+</section>
+
+
+<!--修改密码-->
+<div class="modal fade" id="nav-changePswModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">修改密码</h4>
+            </div>
+            <div class="modal-body">
+                    <div class="clearfix modal-info editinfo">
+                        <ul>
+                            <li><span><i class="c-red ">* </i>用户名：</span><span class=" bfb80 ">1010101010</span></li>
+                            <li><span><i class="c-red">* </i>输入原密码：</span><input type="password" class="form-control bfb80 "/></li>
+                            <li><span><i class="c-red">* </i>输入新密码：</span><input type="password" class="form-control bfb80 "/></li>
+                            <li><span><i class="c-red">* </i>重复新密码：</span><input type="password" class="form-control bfb80 "/></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="modal-btnbox">
+                        <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--添加公告-->
+<div class="modal fade" id="addgonggaoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">添加公告</h4>
+            </div>
+            <div class="modal-body ">
+                <div class="clearfix modal-info editinfo">
+                  <ul>
+                    <li><span><i class="c-red">* </i>标题：</span><input type="text" class="form-control bfb75" /></li>
+                    <li><span><i class="c-red">* </i>内容：</span>
+                        <textarea class="form-control bfb75"></textarea>
+                    </li>
+                    <li><span class="fl"><i class="c-red">* </i>权限：</span>
+                        <div class="fl bfb75 " id="J_allcheckbox_qx">
+                          <label class="pointer v-middle" >
+                            <input type="checkbox" name="all"  id="J_allcheckbox_btn"  />全部
+                          </label>
+                          <label class="pointer v-middle" >
+                            <input type="checkbox" name="gly"  />管理员
+                          </label>
+                          <label class="pointer v-middle" >
+                            <input type="checkbox" name="xz"  />校长
+                          </label>
+                          <label class="pointer v-middle">
+                            <input type="checkbox" name="bzr"  />班主任
+                          </label>
+                          <label class="pointer v-middle" >
+                            <input type="checkbox" name="zxs"  />咨询师
+                          </label>
+                          <label class="pointer v-middle">
+                            <input type="checkbox" name="qt"  />前台
+                          </label>
+                        </div>
+                    </li>
+
+                    <li><span class="fl"><i class="c-red">* </i>校区：</span>
+                        <div class="fl bfb75">
+                          <div class="fl mr10"><input type="checkbox" name="all" id="xq1"/>
+                          <label class="pointer v-middle" for="xq1">全部 </label>
+                          </div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq2"/><label class="pointer v-middle" for="xq2">五道口校区 </label></div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq3"/><label class="pointer v-middle" for="xq3">公主坟校区 </label></div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq4"/><label class="pointer v-middle" for="xq4">黄庄校区 </label></div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq5"/><label class="pointer v-middle" for="xq5">海淀校区 </label></div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq6"/><label class="pointer v-middle" for="xq6">望京校区 </label></div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq7"/><label class="pointer v-middle" for="xq7">海淀校区 </label></div>
+                          <div class="fl mr10"><input type="checkbox" name="" id="xq8"/><label class="pointer v-middle" for="xq8">望京校区 </label></div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="modal-btnbox">
+                    <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--添加便签-->
+<div class="modal fade" id="addbianqianModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">添加便签</h4>
+            </div>
+            <div class="modal-body ">
+                <div class="clearfix modal-info editinfo">
+                  <ul>
+                    <li><span><i class="c-red">* </i>内容：</span>
+                        <textarea class="form-control bfb75"></textarea>
+                    </li>
+                    <li id="index-bwlOpen-tabs"><span>是否添加备忘录：</span>
+                        <div class="square-green single-row inline-block v-middle" >
+                            <input tabindex="3" type="radio"  name="sq-radio" value="0">
+                        </div> 是
+                        <div class="square-green single-row inline-block v-middle ml30" value="1" >
+                            <input tabindex="3" type="radio"  name="sq-radio" checked="" >
+                        </div> 否
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix modal-info editinfo">
+                  <ul id="index-bwlOpen-tabscon" class="hide">
+                    <li>
+                      <span><i class="c-red">* </i>提醒日期：</span>
+                      <input id="assessover-data1" class="laydate-icon bfb25" value="" type="text">至
+                      <input id="assessover-data2" class="laydate-icon bfb25" value="" type="text">
+
+                    </li>
+                     <li>
+                      <span><i class="c-red">* </i>提醒时间：</span>
+
+                      <div class="fl  selectbfb15 w500">
+                          <select class="selectpicker " >
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                          </select>
+                          :
+                          <select class="selectpicker" >
+                            <option>05</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>35</option>
+                            <option>40</option>
+                            <option>45</option>
+                            <option>50</option>
+                            <option>55</option>
+                            <option>60</option>
+                          </select>
+                            至
+                          <select class="selectpicker " >
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                          </select>
+                          :
+                          <select class="selectpicker" >
+                            <option>05</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>35</option>
+                            <option>40</option>
+                            <option>45</option>
+                            <option>50</option>
+                            <option>55</option>
+                            <option>60</option>
+                          </select>
+                          </div>
+                    </li>
+                    <li>
+                      <span class="fl">每周提醒：</span>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq2"/><label class="pointer v-middle" for="cfrq2">每周一 </label></div>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq3"/><label class="pointer v-middle" for="cfrq3">每周二 </label></div>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq4"/><label class="pointer v-middle" for="cfrq4">每周三 </label></div>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq5"/><label class="pointer v-middle" for="cfrq5">每周四 </label></div>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq6"/><label class="pointer v-middle" for="cfrq6">每周五 </label></div>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq7"/><label class="pointer v-middle" for="cfrq7">每周六 </label></div>
+                      <div class="fl mr10"><input type="checkbox" name="" id="cfrq8"/><label class="pointer v-middle" for="cfrq8">每周日 </label></div>
+                    </li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="modal-btnbox">
+                    <button  data-dismiss="modal" type="button" class="btn btn-success">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--↓ 自定义滚动条插件-->
+<script src="js/jquery.nicescroll.js"></script>
+
+<!--echarts-->
+<script src="js/echarts.min.js"></script>
+<script src="js/echarts.init.js"></script>
+
+<!--icheck -->
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/icheck-init.js"></script>
+
+<!--date -->
+<script type="text/javascript" src="js/date/date.js"></script>
+
+<!--btSelect -->
+<script src="js/btSelect/bootstrap-select.min.js"></script>
+
+<!--common scripts for all pages  所有页面的 js-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

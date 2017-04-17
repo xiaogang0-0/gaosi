@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="images/logo_icon_1616.png" type="image/png">
+  <title>爱提分官方网站</title>
+  <!--common-->
+  <link href="css/home.css" rel="stylesheet">
+</head>
+
+<body class="login-page">
+ <div class="login-nav">
+    <div class="wauto mauto">
+      <a href="home.html" class="fl login-img"><img src="images/jigoulogo.png" ></a>
+      <p class="fl title ">找回密码</p>      
+    </div>
+  </div>
+  <div class="zhaohuimima">
+    <div class="wauto mauto psdbox">
+        <ul>
+          <li class="erreinfo "><p id="J_erreinfo" class="hide"></p></li> 
+          <li>
+            <span>手机号：</span><input type="text" class="inputtext tel" id="J_telnumber" />
+          </li>
+          <li>
+           <span>验证码：</span><input type="text" class="inputtext w100 telcode" id="J_telreg" />
+           <input class="btn-warning" id="J_telregbtn" type="button" value="获取验证码"  onclick="sendCode()"/>
+          </li>
+          <li>
+            <span>新密码：</span><input type="password" id="J_newpsd" class="inputtext" placeholder="由6~22位字母或数字组成" />
+          </li>
+          <li>
+           <span>确认新密码：</span><input type="password" id="J_newpsd2" class="inputtext" placeholder="与新密码填写一致" />
+          </li>
+          <li>
+            <input class="btn-success" id="J_zhaohuimima" type="button" value="提交" />
+          </li>
+        </ul>
+    </div>
+  </div>
+  <div class="zhmm-footer">COPYRIGHT © 2015 高思教育 All Rights Reserved 京ICP备16020148号 </div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+  
+  var erreinfo=$("#J_erreinfo");
+  $("#J_zhaohuimima").click(function () {
+
+    var tel=$("#J_telnumber").val();
+    var telreg=$("#J_telreg").val();
+    var newpsd=$("#J_newpsd");
+    var newpsd2=$("#J_newpsd2");
+    var istel=/^1[3|4|5|7|8]\d{9}$/;
+
+    if (tel==""){
+      erreinfo.html("手机号不能为空！").fadeIn(300);
+      return false;
+    }
+    if (telreg==""){
+      erreinfo.html("验证码不能为空！").fadeIn(300);
+      return false;
+    }
+    
+
+    if (!istel.test(tel) ) {
+      erreinfo.html("手机号码格式有误！").fadeIn(300);
+      return false;
+    };
+
+    if (newpsd.val()=="" || newpsd.val().length<6 || newpsd.val().length>22) {
+      erreinfo.html("新密码由6~22位字母或数字组成").fadeIn(300);
+      return false;
+    };
+    if (newpsd.val()!=newpsd2.val()) {
+      erreinfo.html("新密码与确认密码不一致！").fadeIn(300);
+      return false;
+    };
+    
+  })
+
+  var validCode=true;
+  function sendCode() {
+      if ($("#J_telregbtn").attr("disabled")) {       
+          return false;
+      }else{
+      var time=30;
+      var code=$("#J_telregbtn");
+      erreinfo.html("提示：验证码发送，请查看！").fadeIn(300);
+
+      if (validCode) {
+        validCode=false;
+        code.css({"background":"#aaa","border-color":"#999"});
+      var t=setInterval(function  () {
+        time--;
+        code.val(time+"秒");
+        if (time==0) {
+          clearInterval(t);
+        code.val("重新获取");
+          validCode=true;
+        code.css({"background":"#f90","border-color":"#f80"});
+
+        }
+      },1000)
+      }   
+      }
+  }
+
+  $(".inputtext").click(function () {
+    erreinfo.fadeOut(300);
+  })
+
+
+</script>
+</script>
+
+</body>
+</html>

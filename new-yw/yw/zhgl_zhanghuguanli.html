@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>爱提分官方网站-账户管理</title>
+
+  <!--btSelect-->
+  <link href="js/btSelect/bootstrap-select.min.css" rel="stylesheet">
+
+  <!--icheck-->
+  <link href="js/iCheck/skins/square/green.css" rel="stylesheet">
+
+  <!--common-->
+  <link href="css/style.css" rel="stylesheet">
+    <!-- 私有化css -->
+  <link href="css/kjtd-zhgl.css" rel="stylesheet" type="text/css">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+  <style type="text/css">
+       /* .zhgl_zhanghuguanli .js-cons{display:inline-block;font-weight: 400;padding: 6px 15px; margin-right: 5px;}
+        .zhgl_zhanghuguanli .cons-success{background-color:#eeeeee;border-color:#3ba436;}
+        .zhgl_zhanghuguanli .listx .labeld {width: 60px;}
+        .zhgl_zhanghuguanli .listx .labeld span {display: inline-block;font: 400 13px/22px "微软雅黑";color: #666;margin: 0  0  0 27px;float: left;}
+        .zhgl_zhanghuguanli .panel .zhanwei  img{ width:433px;height:257px; margin:30px auto;}*/
+  </style>
+</head>
+<body class="sticky-header">
+
+<section class="zhgl_zhanghuguanli">
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="index.html"><img  src="images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> <span>首页</span></a></li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-laptop"></i> <span>前台业务</span></a>
+                    <ul class="sub-menu-list" >
+                        <li><a href="qtyw_ziyuanzhongxin.html">资源中心</a></li>
+                        <li><a href="qtyw_shoucibaoming.html">办理报名</a></li>
+                        <li><a href="qtyw_xueyuanjifei.html">账户充值</a></li>
+                        <li><a href="qtyw_tianjiabanji.html">办理扩科</a></li>
+                        <li><a href="qtyw_zhuanyikeshi.html">增减课时</a></li>
+                        <li><a href="qtyw_banlituikuan.html">办理退款</a></li>
+                        <li><a href="qtyw_fenpeibanzhuren.html">分配更换班主任</a></li>
+                        <li><a href="qtyw_fapiaoguanli.html">发票管理</a></li>
+                        <li><a href="qtyw_huifangjilu.html">回访记录</a></li>
+                        <li><a href="qtyw_jinchumingxi.html">进出明细</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-magic"></i> <span>教务教学</span></a>
+                    <ul class="sub-menu-list" >
+                        <li><a href="jwjx_xueyuanzhongxin.html">学员中心</a></li>
+                        <li><a href="jwjx_ydybanjiguanli.html">1对1班级管理</a></li>
+                        <li><a href="jwjx_bzkbanjiguanli.html">班组课班级管理</a></li>
+                        <li><a href="jwjx_jiaoshishiduan.html">教师时段</a></li>
+                        <li><a href="jwjx_classtimeshiduan.html">教室时段</a></li>
+                        <li><a href="jwjx_fenpeijiaoshi.html">分配更换教师</a></li>
+                        <li><a href="jwjx_kehaoribaobiao.html">课耗日报表</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-user"></i> <span>人员管理</span></a>
+                    <ul class="sub-menu-list" style="">
+                        <li><a href="rygl_jiaoshiguanli.html">教师管理</a></li>
+                        <li><a href="rygl_xiaoqurenyuanguanli.html">校区人员管理</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-money"></i> <span>财务管理</span></a>
+                    <ul class="sub-menu-list" style="">
+                        <li><a href="cwgl_jituifeishenhe.html">缴退费审核</a></li>
+                        <li><a href="cwgl_caiwurishendan.html">财务日审单</a></li>
+                        <li><a href="cwgl_beiyongjinguanli.html">备用金管理</a></li>
+                        <li><a href="cwgl_zhangmuyuetongji.html">账目月统计</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-gears"></i> <span>系统设置</span></a>
+                    <ul class="sub-menu-list" style="">
+                        <li><a href="xtsz_zuzhijiagou.html">组织架构</a></li>
+                        <li><a href="xtsz_gangweiguanli.html">岗位管理</a></li>
+                        <li><a href="xtsz_ziyuanqudao.html">资源渠道</a></li>
+                        <li><a href="xtsz_huiyuandengjiguize.html">会员等级规则</a></li>
+                        <li><a href="xtsz_jigoujiaoshidengji.html">机构教师等级</a></li>
+                        <li><a href="xtsz_kemuguanli.html">科目管理</a></li>
+                        <li><a href="xtsz_kechengshezhi.html">课程设置</a></li>
+                        <li><a href="xtsz_youhuihuodongguanli.html">优惠活动管理</a></li>
+                        <li><a href="xtsz_qitashezhi.html">其他设置</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-random"></i> <span>批量管理</span></a>
+                    <ul class="sub-menu-list" style="">
+                        <li><a href="plgl_ziyuanguanli.html">资源管理</a></li>
+                        <li><a href="plgl_xueyuanguanli.html">学员管理</a></li>
+                        <li><a href="plgl_kehaoguanli.html">课耗管理</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <a href=""><i class="fa fa-bell"></i> <span>消息中心</span></a>
+                    <ul class="sub-menu-list" style="">
+                        <li><a href="xxzx_yewutixing.html">业务提醒</a></li>
+                        <li><a href="xxzx_xitongxiaoxi.html">系统消息</a></li>
+                        <li><a href="xxzx_beiwanglu.html">工作备忘</a></li>
+                    </ul>
+                </li>
+                <li><a href="sjtj_shujutongji-echarts.html"><i class="fa fa-bar-chart-o"></i> <span>数据统计</span></a></li>
+                <li class="menu-list nav-active">
+                    <a href="javascript:;"><i class="fa fa-bell"></i> <span>账户管理</span></a>
+                    <ul class="sub-menu-list">
+                        <li class="active"><a href="zhgl_zhanghuguanli.html">账户管理</a></li>
+                    </ul>
+                </li>
+                <li><a href="building.html"><i class="fa fa-wrench"></i> <span>建设中...</span></a></li>
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+            <!--toggle button start-->
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+
+            <!--notification menu start -->
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">晓刚<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="#"><i class="fa fa-user"></i>个人资料</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i>我的设置</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i>安全退出</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+        <!-- page heading start-->
+        <div class="page-heading">
+
+            <ul class="breadcrumb">
+                <li>
+                    <a href="home.html">首页</a>
+                </li>
+                <li ><a>账户管理</a></li>
+                <li class="active">账户管理</li>
+            </ul>
+
+        </div>
+        <!-- page heading end-->
+        <div class="wrapper">
+            <section class="panel">
+                <div class="search-info">
+                    <div class="search-box  clearfix ">
+                        <input type="text" class="sb-input" />
+                        <input type="text" class="hide" id="J_searchtype" />
+                        <div class="sb-nav" id="J_searchnav" data-toggle="dropdown"><span class=" fa fa-search"></span><i>类型</i><span class="caret"></span></div>
+                        <ul class="dropdown-menu" id="J_searchcon">
+                            <li>类型</li>
+                            <li>日期</li>
+                            <li>消费部门</li>
+                        </ul>
+                        <button class="btn sb-btn btn-success btn-lg col-lg-1" type="button">搜索</button>
+                        <a class="search-allinfo" href="#" id="J_search_allinfo_btn">高级搜索</a>
+                    </div>
+
+                    <div class=" clearfix" style="display:none">
+                        <ul class="search-allinfocon clearfix listx">
+                            <li class="col-lg-3"><span class="infotitle">选择日期：</span>
+                                <input id="assessover-data1" class="laydate-icon" type="text" value="" placeholder="日期">
+                            </li>
+
+                             <li class="col-lg-3"><span class="infotitle">类型： </span>
+                                <select  class="selectpicker">
+                                    <option>类型一</option>
+                                    <option>类型二</option>
+                                    <option>类型三</option>
+                                    <option>类型四</option>
+                                </select>
+                            </li>
+                            <li class="col-lg-3"><span class="infotitle">用途： </span>
+                                <select  class="selectpicker">
+                                    <option>用途一</option>
+                                    <option>用途二</option>
+                                    <option>用途三</option>
+                                    <option>用途四</option>
+                                </select>
+                            </li>
+                            <li class="col-lg-3"><span class="infotitle">分校名称： </span>
+                                <select  class="selectpicker">
+                                    <option>分校一</option>
+                                    <option>分校二</option>
+                                    <option>分校三</option>
+                                    <option>分校四</option>
+                                </select>
+                            </li>
+                            <li class="col-lg-3"><span class="infotitle">消费部门： </span>
+                                <select  class="selectpicker">
+                                    <option>部门一</option>
+                                    <option>部门二</option>
+                                    <option>部门三</option>
+                                    <option>部门四</option>
+                                </select>
+                            </li>
+                             <li class="col-lg-3"><span class="infotitle">教师编号：</span>
+                                <input type="text" class="form-control " />
+                            </li>
+                            <li class="col-lg-3"><span class="infotitle">教师姓名：</span>
+                                <input type="text" class="form-control " />
+                            </li>
+                            <li class="col-lg-3"><span class="infotitle">科目： </span>
+                                <select  class="selectpicker">
+                                    <option>科目一</option>
+                                    <option>科目二</option>
+                                    <option>科目三</option>
+                                    <option>科目四</option>
+                                </select>
+                            </li>
+                            <li class="col-lg-3 "><span class="infotitle">是否使用： </span>
+                                <div class="square-green  inline-block " >
+                                        <label for="yes" class="labeld clearfix" >
+                                           <span>是</span> <input  type="radio" value="是" name="demo-radio" id="yes"/ >
+                                        </label>
+                                        <label for="no" class="labeld clearfix">
+                                            <span>否</span><input  type="radio" value="否" name="demo-radio" id="no" />
+                                         </label>
+                                </div>
+                            </li>
+                            <li class="col-lg-3"><span class="infotitle">操作人：</span>
+                                <input type="text" class="form-control " />
+                            </li>
+                        </ul>
+                        <div class="search-allinfobtn">
+                            <button class="btn sb-btn btn-success btn-lg" type="button"> 搜索 </button>
+                            <a class="search-allinfo" href="#" id="J_search_btn">精确搜索</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                    <ul class="panel-heading">
+                        <li class="js-cons cons-success">
+                            剩余费用(含赠送)：<span>10000</span>
+                        </li>
+                        <li class="js-cons cons-success">
+                            已开通教师账号：<span>200</span>
+                        </li>
+                        <li class="js-cons cons-success">
+                            空闲账号：<span>22</span>
+                        </li>
+                        <li class="js-cons cons-success">
+                            已使用：<span>666</span>天
+                        </li>
+                        <li class="js-cons cons-success">
+                            距离到期：<span>333</span>天
+                        </li>
+                    </ul>
+                    <div class="panel-body">
+                             <!-- 这个是集团客户的 -->
+                            <div class="adv-table vip" >
+                                <table id="dynamic-table" class="display table table-bordered table-striped">
+                                    <thead >
+                                        <tr class="center" >
+                                            <th width="7%" align=center>日期</th>
+                                            <th width="5%" class="sorting">类型</th>
+                                            <th width="7%" class="sorting">用途</th>
+                                            <th width="9%" class="sorting">分校名称</th>
+                                            <th width="9%">教师账号</th>
+                                            <th width="9%">教师姓名</th>
+                                            <th width="12%">科目</th>
+                                            <th width="8%">金额</th>
+                                            <th width="5%" >剩余金额</th>
+                                            <th width="6%">账号是否有效</th>
+                                            <th width="8%" >账号截止日期</th>
+                                            <th width="8%" class="sorting">操作人</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="center">
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >北京伯乐教育</td>
+                                            <td >18888888888</td>
+                                            <td >刚哥</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >+10000.00</td>
+                                            <td >+1000.00</td>
+                                            <td ><span class="c-red">否</span></td>
+                                            <td ><span class="c-999">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >-666.66</td>
+                                             <td >+1000.00</td>
+                                            <td ><span class="c-red">否</span></td>
+                                            <td ><span class="c-999">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >北京伯乐教育</td>
+                                            <td >18888888888</td>
+                                            <td >刚子哥哥</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >+10000.00</td>
+                                            <td >+1000.00</td>
+                                            <td ><span class="">是</span></td>
+                                            <td ><span class="">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >-666.66</td>
+                                             <td >+1000.00</td>
+                                            <td ><span class="c-red">否</span></td>
+                                            <td ><span class="c-999">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >北京伯乐教育</td>
+                                            <td >18888888888</td>
+                                            <td >刚哥</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >+10000.00</td>
+                                            <td >+1000.00</td>
+                                            <td ><span class="">是</span></td>
+                                            <td ><span class="">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >-666.66</td>
+                                             <td >+1000.00</td>
+                                            <td ><span class="c-red">否</span></td>
+                                            <td ><span class="c-999">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td ><span class=""></span></td>
+                                            <td ><span class=""></span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td ><span class=""></span></td>
+                                            <td ><span class=""></span></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 下面这个是普通客户的 -->
+                            <div class="adv-table" >
+                                <table id="dynamic-table" class="display table table-bordered table-striped">
+                                    <thead>
+                                        <tr class="center" >
+                                            <th width="7%" align=center>日期</th>
+                                            <th width="5%" class="sorting">类型</th>
+                                            <th width="7%" class="sorting">用途</th>
+                                            <th width="9%">教师账号</th>
+                                            <th width="9%">教师姓名</th>
+                                            <th width="12%">科目</th>
+                                            <th width="8%">金额</th>
+                                            <th width="5%" >剩余金额</th>
+                                            <th width="6%">账号是否有效</th>
+                                            <th width="8%" >账号截止日期</th>
+                                            <th width="8%" class="sorting">操作人</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="center">
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >18888888888</td>
+                                            <td >刚哥</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >+10000.00</td>
+                                            <td >+1000.00</td>
+                                            <td ><span class="c-red">否</span></td>
+                                            <td ><span class="c-999">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >-666.66</td>
+                                             <td >+1000.00</td>
+                                            <td ><span class="">是</span></td>
+                                            <td ><span class="">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >18888888888</td>
+                                            <td >刚哥</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >+10000.00</td>
+                                            <td >+1000.00</td>
+                                            <td ><span class="">是</span></td>
+                                            <td ><span class="">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >-666.66</td>
+                                             <td >+1000.00</td>
+                                            <td ><span class="">是</span></td>
+                                            <td ><span class="">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >18888888888</td>
+                                            <td >刚哥</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >+10000.00</td>
+                                            <td >+1000.00</td>
+                                            <td ><span class="c-red">否</span></td>
+                                            <td ><span class="c-999">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td >2017-3-21</td>
+                                            <td >充值</td>
+                                            <td >开通教师账号 </td>
+                                            <td >----</td>
+                                            <td >----</td>
+                                            <td >初中数学、小学数学</td>
+                                            <td >-666.66</td>
+                                             <td >+1000.00</td>
+                                            <td ><span class="">是</span></td>
+                                            <td ><span class="">2019-11-11</span></td>
+                                            <td >北京爱提分</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td ><span class=""></span></td>
+                                            <td ><span class=""></span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td ><span class=""></span></td>
+                                            <td ><span class=""></span></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 下面是没有找到时候的占位图 -->
+                            <div class="adv-table zhanwei center" >
+                                <table id="dynamic-table" class="display table table-bordered table-striped">
+                                    <thead>
+                                        <tr class="center" >
+                                            <th width="7%" align=center>日期</th>
+                                            <th width="5%" class="sorting">类型</th>
+                                            <th width="7%" class="sorting">用途</th>
+                                            <th width="9%">教师账号</th>
+                                            <th width="9%">教师姓名</th>
+                                            <th width="12%">科目</th>
+                                            <th width="8%">金额</th>
+                                            <th width="5%" >剩余金额</th>
+                                            <th width="6%">账号是否有效</th>
+                                            <th width="8%" >账号截止日期</th>
+                                            <th width="8%" class="sorting">操作人</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <img src="images/zhanwei.jpg">
+                            </div>
+                            <ul class="pagination fr">
+                                <li><a class=" fa fa-caret-left" href="javascript:;"></a></li>
+                                <li><a href="javascript:;">1</a></li>
+                                <li class="active"><a href="#">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li><a class="fa fa-caret-right" href="javascript:;"></a></li>
+                            </ul>
+                    </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- main content end-->
+
+</section>
+
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <!--↓ 自定义滚动条插件-->
+<script src="js/jquery.nicescroll.js"></script>
+<!--icheck -->
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/icheck-init.js"></script>
+
+<!--btSelect -->
+<script src="js/btSelect/bootstrap-select.min.js"></script>
+
+<!--date -->
+<script type="text/javascript" src="js/date/date.js"></script>
+
+<!--common scripts for all pages  所有页面的 js-->
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>
+
