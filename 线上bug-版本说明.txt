@@ -1,0 +1,43 @@
+1.select 组件下拉的滚动条提前触发   重新设定最大高度
+
+   // $(document).on('click','.btn-group button', function (e) {
+   //         $('.dropdown-menu').css({'max-height':'200px'});
+   //         // e.stopPropagation();//阻止冒泡 可不写 插件中有
+   // });
+
+    重新设定最大高度 触发自定义滚动条 
+    线上现在 wrapper 的行间样式加了 一个auto 记得去掉
+2.前台业务-发票管理      ==> 高级搜索的 时间选择 bug   ===>   修改id  原因id冲突   线上的解决了
+3.人员管理-员工管理      ==> 高级搜索的 时间选择 bug   ===>   修改id  原因id冲突
+
+
+
+new-yw-v0: 实现 代码私有化的分离 js/css的分离 
+new-yw-v1: 修改了线上的bug 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // var $m=$('.js-m')
+
+// $m.find('.js-btn').on('click',function  (argument) {
+                  
+ // })
+
+ //  $m.find('.js-btn').delegate() 避免出现那target 的内容比较  直接给每一个帮一个事件
